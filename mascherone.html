@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,11 +68,14 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -77,12 +99,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./bibliography.html" rel="" target="">
- <span class="menu-text">Bibliografia</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="./mascherone.html" rel="" target="" aria-current="page">
  <span class="menu-text">Villa Mascherone</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./bibliography.html" rel="" target="">
+ <span class="menu-text">Bibliografia</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
@@ -95,7 +117,21 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">In questa pagina</h2>
+   
+  <ul>
+  <li><a href="#inquadramento-archeologico" id="toc-inquadramento-archeologico" class="nav-link active" data-scroll-target="#inquadramento-archeologico">Inquadramento archeologico</a></li>
+  <li><a href="#cronologia-di-occupazione" id="toc-cronologia-di-occupazione" class="nav-link" data-scroll-target="#cronologia-di-occupazione">Cronologia di occupazione</a></li>
+  <li><a href="#un-approccio-spazio-temporale" id="toc-un-approccio-spazio-temporale" class="nav-link" data-scroll-target="#un-approccio-spazio-temporale">Un approccio spazio-temporale</a></li>
+  <li><a href="#informazioni-supplementari" id="toc-informazioni-supplementari" class="nav-link" data-scroll-target="#informazioni-supplementari">Informazioni supplementari</a>
+  <ul class="collapse">
+  <li><a href="#macroclassi-cronotipologiche" id="toc-macroclassi-cronotipologiche" class="nav-link" data-scroll-target="#macroclassi-cronotipologiche">Macroclassi cronotipologiche</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
 
@@ -112,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Data di Pubblicazione</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">10 febbraio 2024</p>
+      <p class="date">19 ottobre 2024</p>
     </div>
   </div>
   
@@ -122,29 +158,327 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Pagina dedicata all’analisi sulla cronologia di occupazione di villa Mascherone. Quanto mostrato nei grafici di seguito è un’analisi aoristica (cumulativa) derivante dalla ceramica rinvenuta in tutti i quadrati del campo. La cronologia è da rifinire in base ai materiali da siti editi noti prossimi a Siponto (Salapia?). L’obiettivo è passare da questo grafico ad un grafico probabilistico che ci da più informazioni sull’incertezza relativa a queste datazioni.</p>
+<div class="cell">
+<style type="text/css">
+p {
+  text-align: justify
+}
+</style>
+</div>
+<p>In questa pagina si possono consultare le analisi preliminari effettuate sui campioni provenienti dalla ricognizione di Settembre-Ottobre 2024 in località Mascherone, Manfredonia (FG). Le indagini di superficie hanno riguardato l’area denominata come ‘Campo 62’, localizzata a circa 1.4 km dal perimetro dell’antica città di Siponto. Nel campo è stata predisposta una griglia regolare con 122 quadrati di dimensioni 20m x 20m, orientati secondo l’andamento della strada (viale degli Eucalipti) a N e il canneto divisorio lungo l’asse E del campo.</p>
+<section id="inquadramento-archeologico" class="level2">
+<h2 class="anchored" data-anchor-id="inquadramento-archeologico">Inquadramento archeologico</h2>
+<p>L’area in questione era già di interesse archeologico in seguito ad una segnalazione del 1967 alla Arch. SAP di Foggia (R25/164 relazione del 4.3.1967). L’interpretazione di villa romana marittima, posta su una penisola in antichità circondata dalle acque su tre lati, è stata offerta da diversi autori <span class="citation" data-cites="dantiVillaMarittimaLocalita1999 delanosmithBuriedLagoonLost1974 delanosmithDauniaVetusTerra1978 lippolisTestimonianzeDiEta1984 marinIntornoAdAlcuni1986 mazzeiSipontoAntica1999 volpeDauniaNelletaRomanizzazione1990">(<a href="#ref-dantiVillaMarittimaLocalita1999" role="doc-biblioref">Danti 1999</a>; <a href="#ref-delanosmithBuriedLagoonLost1974" role="doc-biblioref">Delano Smith e Morrison 1974</a>; <a href="#ref-delanosmithDauniaVetusTerra1978" role="doc-biblioref">Delano Smith 1978</a>; <a href="#ref-lippolisTestimonianzeDiEta1984" role="doc-biblioref">Lippolis 1984</a>; <a href="#ref-marinIntornoAdAlcuni1986" role="doc-biblioref">Marin 1986</a>; <a href="#ref-mazzeiSipontoAntica1999" role="doc-biblioref">Mazzei 1999</a>; <a href="#ref-volpeDauniaNelletaRomanizzazione1990" role="doc-biblioref">Volpe 1990</a>)</span>. Più recentemente, ricerche aerotopografiche hanno fornito una pianta più dettagliata dell’edificio <span class="citation" data-cites="ceraudoIndaginiPredittiveRicerche2011 ceraudoArcheologiaAereaStudi2011">(<a href="#ref-ceraudoIndaginiPredittiveRicerche2011" role="doc-biblioref">Ceraudo et al. 2011</a>; <a href="#ref-ceraudoArcheologiaAereaStudi2011" role="doc-biblioref">Ceraudo 2011</a>)</span>, su cui non sono state avanzate ipotesi riguardo la cronologia delle fasi di occupazione.</p>
+</section>
+<section id="cronologia-di-occupazione" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="cronologia-di-occupazione">Cronologia di occupazione</h2>
+<p>La prima fase di analisi dei dati raccolti sul campo, basata su una distinzione preliminare in macroclassi ceramiche, è stata incentrata sulla ricostruzione delle fasi a maggiore intensità di occupazione. L’analisi aoristica (cumulativa), che ha tenuto in considerazione tutto il materiale ceramico rinvenuto all’interno del perimetro del <strong>Campo 62</strong>, mostra una lunga occupazione dell’area a partire dalla preistoria, in cui sono ben distinguibili tuttavia due fasi ad alta intensità insediativa in età romana. La prima fase di età repubblicana, a cui probabilmente si deve l’impianto della villa, mostra una cesura alla fine dell’età augustea. Una seconda fase di occupazione fra il IV e la prima metà del VI secolo d.C. è ipotizzabile, con una cesura piuttosto netta fra il VII e VIII secolo d.C.</p>
+<p>La cronologia proposta è assolutamente preliminare e necessita rifiniture su più fronti:</p>
+<ol type="1">
+<li>La cronologia delle singole classi ceramiche (<a href="#tbl-datazione-macrocatgorie">Tabella&nbsp;1</a>) deve essere tarata sulla base dei materiali da siti editi noti prossimi a Siponto. Salapia?</li>
+<li>Lo studio dei materiali anforacei e ceramici permetterà di restringere il range cronologico e presumibilmente distinguere meglio le due fasi (o al contrario mostrare maggiore continuità).</li>
+<li>La cronologia può essere rifinita maggiormente attraverso un’indagine statistica più raffinata. Le analisi aoristiche sono un ottimo punto di partenza per la definizione delle fasi di vita di insediamenti non scavati, in cui non sono state effettuate analisi al radiocarbonio, e le cui uniche informazioni cronologiche derivano dalle cronotipologie dei reperti <span class="citation" data-cites="ashbyComparisonMethodsTemporal2013 johnsonAoristicAnalysisSeeds2004">(<a href="#ref-ashbyComparisonMethodsTemporal2013" role="doc-biblioref">Ashby e Bowers 2013</a>; <a href="#ref-johnsonAoristicAnalysisSeeds2004" role="doc-biblioref">Johnson 2004</a>)</span>. I singoli frammenti ceramici sono trattati come ‘blocchi temporali’, che vengono poi sommati per ottenere informazioni sull’intensità di occupazione. La logica è simile alle indagini paleodemografiche basate su datazioni C14: “più cose, più persone”. Tuttavia, la risoluzione cronologica offerta dalle cronotipologie è inferiore alle datazioni basate su radiocarbonio in quanto non ci consentono di misurare il grado di incertezza sulla cronologia proposta.</li>
+</ol>
+<p>Il <strong>punto 3</strong> è particolarmente interessante e complesso da studiare. Un’alternativa bayesiana ai metodi aoristici è stata recentemente proposta in <span class="citation" data-cites="cremaBayesianAlternativeAoristic2024">Crema (<a href="#ref-cremaBayesianAlternativeAoristic2024" role="doc-biblioref">2024</a>)</span>, che offre una base su cui lavorare per passare dal grafico proposto qui di seguito (Fig. 1-2) a delle stime probabilistiche sulle singole fasi cronologiche (definite in blocchi di mezzo secolo).</p>
 <div class="cell column-screen-inset-shaded quarto-layout-panel" width="10">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
+<div id="fig-aoristic-mascherone-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="mascherone_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="mascherone_files/figure-html/fig-aoristic-mascherone-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figura&nbsp;1: Somma aoristica dei materiali rinvenuti nel Campo 62, datati in base a macroclassi cronotipologiche. Inquadramento cronologico totale dei materiali archeologici.</figcaption>
 </figure>
 </div>
 </div>
 <div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
+<div id="fig-aoristic-mascherone-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="mascherone_files/figure-html/unnamed-chunk-2-2.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="mascherone_files/figure-html/fig-aoristic-mascherone-2.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figura&nbsp;2: Focus sulle fasi cronologiche a più alta intensita insediativa.</figcaption>
 </figure>
 </div>
 </div>
 </div>
 </div>
+</section>
+<section id="un-approccio-spazio-temporale" class="level2">
+<h2 class="anchored" data-anchor-id="un-approccio-spazio-temporale">Un approccio spazio-temporale</h2>
+<p>Definita la cronologia globale di occupazione della villa, la quadrettatura del campo offre spunti interessanti di analisi:</p>
+<ol type="1">
+<li>Tutti i quadrati del Campo 62 hanno una cronologia coerente?</li>
+<li>È possibile proporre una divisione funzionale degli ambienti della villa in base al materiale rinvenuto?</li>
+<li>Interpolando i dati del campo con i campi contigui, è possibile individuare una <em>pars rustica</em> e delimitare l’estensione areale della villa con maggiore precisione?</li>
+</ol>
+</section>
+<section id="informazioni-supplementari" class="level2">
+<h2 class="anchored" data-anchor-id="informazioni-supplementari">Informazioni supplementari</h2>
+<section id="macroclassi-cronotipologiche" class="level3">
+<h3 class="anchored" data-anchor-id="macroclassi-cronotipologiche">Macroclassi cronotipologiche</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-datazione-macrocatgorie" class="anchored">
+<table class="lightable-minimal table table-sm table-striped small" data-quarto-postprocess="true">
+<caption>Tabella&nbsp;1: Datazione proposta per le macroclassi di materiali archeologici rinvenuti durante le indagini di ricognizione di superficie. I valori sono in anni per necessità computazionali, e sono espressi in negativo per le datazioni a.C. e in positivo per le datazioni d.C. Le datazioni sono da considerarsi assolutamente come preliminari e vanno tarate in base alle pregresse ricerche sul territorio.</caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" style="text-align: left; empty-cells: hide; border-bottom: hidden;"></th>
+<th colspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-bottom: hidden; padding-bottom: 0; padding-left: 3px; padding-right: 3px;"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Cronologia
+</div></th>
+</tr>
+<tr class="odd">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Materiale</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Datazione_da</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Datazione_a</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">laterizi_tegole</td>
+<td style="text-align: right;">-399</td>
+<td style="text-align: right;">1599</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tegola_romana_alette</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">200</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tegola_pettinata</td>
+<td style="text-align: right;">501</td>
+<td style="text-align: right;">700</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">macine</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">scorie_metalliche</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">marmo</td>
+<td style="text-align: right;">-200</td>
+<td style="text-align: right;">600</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tessere_musive</td>
+<td style="text-align: right;">-299</td>
+<td style="text-align: right;">499</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_comune</td>
+<td style="text-align: right;">-299</td>
+<td style="text-align: right;">1700</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_comune_medievale</td>
+<td style="text-align: right;">1001</td>
+<td style="text-align: right;">1500</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_protomaiolica</td>
+<td style="text-align: right;">1250</td>
+<td style="text-align: right;">1400</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_dipinta</td>
+<td style="text-align: right;">-399</td>
+<td style="text-align: right;">400</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_RMR</td>
+<td style="text-align: right;">1201</td>
+<td style="text-align: right;">1325</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_vernice_rossa_interna</td>
+<td style="text-align: right;">-99</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_smaltata</td>
+<td style="text-align: right;">1500</td>
+<td style="text-align: right;">1700</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_invetriata</td>
+<td style="text-align: right;">1100</td>
+<td style="text-align: right;">1700</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_invetriata_verde</td>
+<td style="text-align: right;">1201</td>
+<td style="text-align: right;">1400</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_invetriata_graffita</td>
+<td style="text-align: right;">1175</td>
+<td style="text-align: right;">1599</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_invetriata_eta_moderna</td>
+<td style="text-align: right;">1450</td>
+<td style="text-align: right;">1700</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pareti_sottili</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_TSI</td>
+<td style="text-align: right;">-50</td>
+<td style="text-align: right;">150</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_TSA</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">650</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_TSA_A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">299</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_TSA_C</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">499</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_TSA_D</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">650</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_eastern_sigillata</td>
+<td style="text-align: right;">-50</td>
+<td style="text-align: right;">150</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_CAC</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">299</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_LRCW</td>
+<td style="text-align: right;">301</td>
+<td style="text-align: right;">699</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_fuoco</td>
+<td style="text-align: right;">-200</td>
+<td style="text-align: right;">1700</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_ICW</td>
+<td style="text-align: right;">201</td>
+<td style="text-align: right;">399</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_fuoco_invetriata</td>
+<td style="text-align: right;">1200</td>
+<td style="text-align: right;">1599</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_lucerna</td>
+<td style="text-align: right;">-200</td>
+<td style="text-align: right;">1700</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_dolia_GC</td>
+<td style="text-align: right;">-700</td>
+<td style="text-align: right;">1000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_impasto</td>
+<td style="text-align: right;">-6000</td>
+<td style="text-align: right;">-700</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_vernice_nera</td>
+<td style="text-align: right;">-400</td>
+<td style="text-align: right;">-100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_amphoras</td>
+<td style="text-align: right;">-400</td>
+<td style="text-align: right;">1599</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_geometrica</td>
+<td style="text-align: right;">-800</td>
+<td style="text-align: right;">-300</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_pasta_grigia</td>
+<td style="text-align: right;">-150</td>
+<td style="text-align: right;">-50</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_non_identificata</td>
+<td style="text-align: right;">-2000</td>
+<td style="text-align: right;">1800</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+</div>
+</div>
 
 
 
-</main> <!-- /main -->
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Torna in cima</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Referenze</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-ashbyComparisonMethodsTemporal2013" class="csl-entry" role="listitem">
+Ashby, Matthew Pj, e Kate J Bowers. 2013. <span>«A comparison of methods for temporal analysis of aoristic crime»</span>. <em>Crime Science</em> 2 (1): 1. <a href="https://doi.org/10.1186/2193-7680-2-1">https://doi.org/10.1186/2193-7680-2-1</a>.
+</div>
+<div id="ref-ceraudoArcheologiaAereaStudi2011" class="csl-entry" role="listitem">
+Ceraudo, Giuseppe, a c. di. 2011. <em>Archeologia <span>Aerea</span>. <span>Studi</span> Di <span>Aerotopografia Archeologica IV-V</span> (2010-2011)</em>. Foggia.
+</div>
+<div id="ref-ceraudoIndaginiPredittiveRicerche2011" class="csl-entry" role="listitem">
+Ceraudo, Giuseppe, G. Caldarola, P. Gentile, K. Luzio, T. Mastracci, M. Sammarco, e A. Valchera. 2011. <span>«Le indagini predittive. Le ricerche aerotopografiche»</span>. In <em>Siponto: archeologia di una città abbandonata nel Medioevo</em>, a cura di Caterina Laganara. Foggia: C. Grenzi.
+</div>
+<div id="ref-cremaBayesianAlternativeAoristic2024" class="csl-entry" role="listitem">
+Crema, Enrico R. 2024. <span>«A Bayesian alternative for aoristic analyses in archaeology»</span>. <em>Archaeometry</em>, arcm.12984. <a href="https://doi.org/10.1111/arcm.12984">https://doi.org/10.1111/arcm.12984</a>.
+</div>
+<div id="ref-dantiVillaMarittimaLocalita1999" class="csl-entry" role="listitem">
+Danti, A. 1999. <span>«La villa marittima in località Mascherone»</span>. In <em>Siponto antica</em>, a cura di Marina Mazzei, 155–60. Foggia: C. Grenzi.
+</div>
+<div id="ref-delanosmithDauniaVetusTerra1978" class="csl-entry" role="listitem">
+Delano Smith, Catherine. 1978. <em>Daunia vetus: terra, vita e mutamenti sulle coste del Tavoliere</em>. Amministrazione Provinciale di Capitanata. <a href="https://books.google.com?id=Ww9iHAAACAAJ">https://books.google.com?id=Ww9iHAAACAAJ</a>.
+</div>
+<div id="ref-delanosmithBuriedLagoonLost1974" class="csl-entry" role="listitem">
+Delano Smith, Catherine, e I. A. Morrison. 1974. <span>«The Buried Lagoon and Lost Port of <span>Sipontum</span> (<span>Foggia</span>, <span>Italy</span>)»</span>. <em>International Journal of Nautical Archaeology</em> 3 (2): 275–81. <a href="https://doi.org/10.1111/j.1095-9270.1974.tb00884.x">https://doi.org/10.1111/j.1095-9270.1974.tb00884.x</a>.
+</div>
+<div id="ref-johnsonAoristicAnalysisSeeds2004" class="csl-entry" role="listitem">
+Johnson, Ian. 2004. <span>«Aoristic analysis: seeds of a new approach to mapping archaeological distributions through time»</span>. <a href="https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/60663/101_Johnson_CAA_2003.pdf?sequence=2&amp;isAllowed=y">https://ub01.uni-tuebingen.de/xmlui/bitstream/handle/10900/60663/101_Johnson_CAA_2003.pdf?sequence=2&amp;isAllowed=y</a>.
+</div>
+<div id="ref-lippolisTestimonianzeDiEta1984" class="csl-entry" role="listitem">
+Lippolis, Enzo. 1984. <span>«Testimonianze Di Età Romana Nel Territorio Garganico»</span>. In <em>Atti Del Convegno "<span>La</span> Ricerca Archeologica Nel Territorio Garganico" (<span>Vieste</span> 1982)</em>, 171–96. Quaderni Del <span>CSPCR</span> Di <span>Foggia</span>. Foggia: Centro di Servizio e Programmazione Culturale Regionale.
+</div>
+<div id="ref-marinIntornoAdAlcuni1986" class="csl-entry" role="listitem">
+Marin, Meluta Miroslav. 1986. <span>«Intorno Ad Alcuni Problemi Della <span>Daunia</span> in Età Romana»</span>. In <em>Atti Del <span>IV Convegno</span> Sulla <span>Preistoria</span>, <span>Protostoria</span> e <span>Storia</span> Della <span>Daunia</span> (<span>San Severo</span> 1982)</em>, a cura di Biblioteca comunale "A. Minuziano" e Archeoclub d’Italia -Sezione di San Severo, 23–47. San Severo.
+</div>
+<div id="ref-mazzeiSipontoAntica1999" class="csl-entry" role="listitem">
+Mazzei, Marina, a c. di. 1999. <em>Siponto antica</em>. Foggia: C. Grenzi.
+</div>
+<div id="ref-volpeDauniaNelletaRomanizzazione1990" class="csl-entry" role="listitem">
+Volpe, Giuliano. 1990. <em>La Daunia nell’età della romanizzazione: paesaggio agrario, produzione, scambi</em>. Edipuglia srl. <a href="https://books.google.com?id=k5xMcZUjdvwC">https://books.google.com?id=k5xMcZUjdvwC</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
