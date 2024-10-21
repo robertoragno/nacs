@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "\n    Northern Apulia Coastal Survey\n",
+    "title": " Northern Apulia Coastal Survey",
     "section": "",
-    "text": "Benvenuti nel sito web delle ricognizioni archeologiche di superficie del progetto \n            Northern Apulia Coastal Survey (NACS), legato alla campagna di scavi condotta dalle Università di Bari e Foggia \n            nella città di Siponto. La campagna 2024 è terminata l'11 Ottobre 2024.\n        \n        \n            Vai alla mappa"
+    "text": "Benvenuti nel sito web delle ricognizioni archeologiche di superficie del progetto\n      Northern Apulia Coastal Survey (NACS), legato alla campagna di scavi condotta dalle Università di Bari e Foggia\n      nella città di Siponto. La campagna 2024 è terminata l'11 Ottobre 2024.\n\n    \n      Vai alla mappa"
   },
   {
     "objectID": "about.html",
@@ -135,7 +135,21 @@
   {
     "objectID": "index.html#sec-mappa",
     "href": "index.html#sec-mappa",
-    "title": "\n    Northern Apulia Coastal Survey\n",
+    "title": " Northern Apulia Coastal Survey",
+    "section": "Mappa",
+    "text": "Mappa\nEsplora la mappa interattiva qui sotto, dove puoi visualizzare le aree mappate e ottenere ulteriori informazioni su ciascun campo e unità topografica. Clicca sui poligoni per scoprire dettagli come l’uso del suolo, la vegetazione, e altre evidenze archeologiche.\nNota: La mappa è in corso di sviluppo, e alcuni campi risultano privi di informazioni. A breve, nuove UR e nuove UT saranno inserite per completare la mappatura di quanto ricognito fino ad oggi."
+  },
+  {
+    "objectID": "index2.html",
+    "href": "index2.html",
+    "title": " Northern Apulia Coastal Survey",
+    "section": "",
+    "text": "Benvenuti nel sito web delle ricognizioni archeologiche di superficie del progetto\n      Northern Apulia Coastal Survey (NACS), legato alla campagna di scavi condotta dalle Università di Bari e Foggia\n      nella città di Siponto. La campagna 2024 è terminata l'11 Ottobre 2024.\n\n    \n      Vai alla mappa"
+  },
+  {
+    "objectID": "index2.html#sec-mappa",
+    "href": "index2.html#sec-mappa",
+    "title": " Northern Apulia Coastal Survey",
     "section": "Mappa",
     "text": "Mappa\nEsplora la mappa interattiva qui sotto, dove puoi visualizzare le aree mappate e ottenere ulteriori informazioni su ciascun campo e unità topografica. Clicca sui poligoni per scoprire dettagli come l’uso del suolo, la vegetazione, e altre evidenze archeologiche.\nNota: La mappa è in corso di sviluppo, e alcuni campi risultano privi di informazioni. A breve, nuove UR e nuove UT saranno inserite per completare la mappatura di quanto ricognito fino ad oggi."
   }

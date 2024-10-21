@@ -23,3 +23,32 @@ html {
   }
 }
 
+/* Styles for mobile screens */
+@media (max-width: 768px) {
+    #hero {
+        height: auto; /* Adjust height for mobile */
+        background: rgba(0, 0, 0, 0.5); /* Optional background for mobile */
+    }
+
+    #hero img {
+        display: none; /* Hide the image on mobile */
+    }
+
+    #mobile-content {
+        display: block; /* Show mobile-specific content */
+    }
+
+    #desktop-content {
+        display: none; /* Hide desktop-specific content */
+    }
+}
+
+/* Ensure desktop content is hidden on mobile */
+#desktop-content {
+    display: block; /* Default to showing desktop content */
+}
+
+#mobile-content {
+    display: none; /* Default to hiding mobile content */
+}
+
