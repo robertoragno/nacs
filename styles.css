@@ -1,1 +1,25 @@
 /* css styles */
+
+/* Styles for hero section text */
+html {
+  scroll-behavior: smooth;
+}
+
+#hero {
+  position: relative;
+  height: 100vh; /* Ensure the image takes up the full viewport height */
+  overflow: hidden; /* Prevent the image from overflowing */
+}
+
+#next-section {
+  height: auto; /* Adjust based on your map or other content */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+  #hero div {
+    width: 90%;
+    right: 5%;
+  }
+}
+
