@@ -137,6 +137,10 @@ div.csl-indent {
  <span class="menu-text">Villa Mascherone</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./progress.html" rel="" target="">
+ <span class="menu-text">Avanzamento</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./bibliography.html" rel="" target="">
  <span class="menu-text">Bibliografia</span></a>
   </li>  
@@ -159,7 +163,7 @@ div.csl-indent {
   <li><a href="#inquadramento-archeologico" id="toc-inquadramento-archeologico" class="nav-link active" data-scroll-target="#inquadramento-archeologico">Inquadramento archeologico</a></li>
   <li><a href="#cronologia-di-occupazione" id="toc-cronologia-di-occupazione" class="nav-link" data-scroll-target="#cronologia-di-occupazione">Cronologia di occupazione</a>
   <ul class="collapse">
-  <li><a href="#test-icar-models" id="toc-test-icar-models" class="nav-link" data-scroll-target="#test-icar-models">Test: ICAR Models</a></li>
+  <li><a href="#tests-icar-models" id="toc-tests-icar-models" class="nav-link" data-scroll-target="#tests-icar-models">Tests: ICAR Models</a></li>
   </ul></li>
   <li><a href="#un-approccio-spazio-temporale" id="toc-un-approccio-spazio-temporale" class="nav-link" data-scroll-target="#un-approccio-spazio-temporale">Un approccio spazio-temporale</a></li>
   <li><a href="#informazioni-supplementari" id="toc-informazioni-supplementari" class="nav-link" data-scroll-target="#informazioni-supplementari">Informazioni supplementari</a>
@@ -260,8 +264,23 @@ p {
 </div>
 </div>
 </div>
-<section id="test-icar-models" class="level3">
-<h3 class="anchored" data-anchor-id="test-icar-models">Test: ICAR Models</h3>
+<section id="tests-icar-models" class="level3">
+<h3 class="anchored" data-anchor-id="tests-icar-models">Tests: ICAR Models</h3>
+<section id="test-1-original-dataset" class="level4">
+<h4 class="anchored" data-anchor-id="test-1-original-dataset">Test 1: Original dataset</h4>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Importante
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Status: <strong>FAILED</strong></p>
+</div>
+</div>
 <p>Below, the results of the ICAR on the probability matrix used to display the previous figures. The pipeline was the following:</p>
 <ol type="1">
 <li>Start from a .CSV table with a different column for each find class (e.g.&nbsp;Ceramic-Type-A, Ceramic-Type-B, …, Ceramic-Type-n).</li>
@@ -319,9 +338,10 @@ p {
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                              <span class="at">nburnin=</span><span class="dv">5000</span>,</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>                              <span class="at">thin=</span><span class="dv">50</span>,</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>                              <span class="at">nchains=</span><span class="dv">4</span>,</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>                              <span class="at">parallel=</span><span class="cn">FALSE</span>)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(Mascherone_icarfit, <span class="st">"Mascherone_icarfit.rds"</span>)</span></code><button title="Copia negli appunti" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>                              <span class="at">sigmaPrior =</span> <span class="st">"dexp(rate=100)"</span>,</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>                              <span class="at">parallel=</span><span class="cn">FALSE</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(Mascherone_icarfit, <span class="st">"Mascherone_icarfit.rds"</span>)</span></code><button title="Copia negli appunti" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="8" type="1">
 <li>The plot in <a href="#fig-ICAR-Mascherone">Figura&nbsp;4</a> shows a restricted range of dates just for visualisation.</li>
@@ -340,15 +360,62 @@ p {
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(Mascherone_icarfit2<span class="sc">$</span>rhat<span class="sc">$</span>psrf)</span></code><button title="Copia negli appunti" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>   Point est.       Upper C.I.   
- Min.   :0.9984   Min.   :1.008  
- 1st Qu.:1.0971   1st Qu.:1.172  
- Median :1.2240   Median :1.481  
- Mean   :1.1973   Mean   :1.553  
- 3rd Qu.:1.2900   3rd Qu.:1.868  
- Max.   :1.6688   Max.   :4.132  </code></pre>
+<pre><code>   Point est.       Upper C.I.    
+ Min.   :0.9924   Min.   :0.9942  
+ 1st Qu.:1.0370   1st Qu.:1.0972  
+ Median :1.1994   Median :1.6492  
+ Mean   :1.2049   Mean   :2.1474  
+ 3rd Qu.:1.3496   3rd Qu.:2.8609  
+ Max.   :1.5473   Max.   :5.5862  </code></pre>
 </div>
 </div>
+</section>
+<section id="test-2-cleaned-dataset" class="level4">
+<h4 class="anchored" data-anchor-id="test-2-cleaned-dataset">Test 2: Cleaned dataset</h4>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Consiglio
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Status: <strong>COMPLETED</strong> Con: The probabilities approach zero almost anytime; the resolution had to be lower.</p>
+</div>
+</div>
+<p>In this test, I attempt to perform the ICAR on a dataset that does not have all the background noise (i.e.&nbsp;materials spanning very wide chronologies, as laterizi_tegole, ceramica_comune, ceramica_fuoco, ceramica_impasto, ceramica_non_identificata). This test has performed better, with two clear peaks corresponding to the same peaks as in the aoristic analysis.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Aoristic</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">ICAR</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-aoristic-Mascherone-Reduced" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="mascherone_files/figure-html/fig-aoristic-Mascherone-Reduced-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figura&nbsp;5: Somma aoristica dei materiali rinvenuti nel Campo 62, datati in base a macroclassi cronotipologiche. Inquadramento cronologico dei materiali archeologici dal dataset pulito e ristretto cronologicamente.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-ICAR-Mascherone-Reduced" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="mascherone_files/figure-html/fig-ICAR-Mascherone-Reduced-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figura&nbsp;6: ICAR sul dataset pulito dal rumore di fondo con parametri [niter=10000, nburnin=5000, thin=100, nchains=4], ristretta al range 3000-101 BP.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 </section>
 </section>
 <section id="un-approccio-spazio-temporale" class="level2">
