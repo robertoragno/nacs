@@ -165,7 +165,7 @@
     "href": "progress.html",
     "title": "Avanzamento",
     "section": "",
-    "text": "In questa pagina sono raccolte le attività da completare per l’avanzamento del progetto. Successivamente alla creazione del sito, diventerà una dashboard di controllo dell’avanzamento generale delle attività di survey."
+    "text": "Campi ricogniti\n45\n\nArea totale: \n173.1\nha\n\n\n\n\n\n\n\n\n\n\nUT individuate\n18\n\nArea totale: \n31.35\nha\n\n\n\n\n\n\n\n\n\n\nTarget\nX %\nAree indagate sul totale dell'area campione."
   },
   {
     "objectID": "progress.html#to-do-list",
@@ -186,6 +186,20 @@
     "href": "progress.html#generale",
     "title": "Avanzamento",
     "section": "Generale",
-    "text": "Generale\n\nTabella riepilogativa dei task da completare in generale post-survey.\n\n\n\n\n\n\nStato\nDescrizione\n\n\n\n\nIn avanzamento\nImportazione dei campi sul GIS.\nNota: Mancano i campi delle prime settimane.\n\n\nIn avanzamento\nImportazione delle UT sul GIS.\nNota: Mancano le UT delle prime settimane.\n\n\nNon completato\n…"
+    "text": "Generale\nIn questa pagina sono raccolte le attività da completare per l’avanzamento del progetto. Successivamente alla creazione del sito, diventerà una dashboard di controllo dell’avanzamento generale delle attività di survey.\n\nTabella riepilogativa dei task da completare in generale post-survey.\n\n\n\n\n\n\nStato\nDescrizione\n\n\n\n\nIn avanzamento\nImportazione dei campi sul GIS.\nNota: Mancano i campi delle prime settimane.\n\n\nIn avanzamento\nImportazione delle UT sul GIS.\nNota: Mancano le UT delle prime settimane.\n\n\nNon completato\n…"
+  },
+  {
+    "objectID": "progress.html#row",
+    "href": "progress.html#row",
+    "title": "Avanzamento",
+    "section": "Row",
+    "text": "Row\n\nsum(UT_joined$area) * 0.0001\n\n31.35408 [m^2]\n\n\n\nsum(UT_joined$area) * 0.0001\n\n31.35408 [m^2]\n\n\n\nsum(UT_joined$area) * 0.0001\n\n31.35408 [m^2]\n\n\nIn questa pagina sono raccolte le attività da completare per l’avanzamento del progetto. Successivamente alla creazione del sito, diventerà una dashboard di controllo dell’avanzamento generale delle attività di survey."
+  },
+  {
+    "objectID": "progress.html#new",
+    "href": "progress.html#new",
+    "title": "Avanzamento",
+    "section": "new",
+    "text": "new\n\n\n\nAttaching package: 'bslib'\n\n\nThe following object is masked from 'package:utils':\n\n    page\n\n\nWarning: package 'bsicons' was built under R version 4.2.3\n\n\n\n\n\n\n\n\n\n1st value\n173.1\nThe 1st detail\n\n\n\n\n\n\n\n\n\n\n\n\n2nd value\n31.35\nThe 2nd detail\nThe 3rd detail\n\n\n\n\n\n\n\n\n\n\n\n\n3rd value\n789\nThe 4th detail\nThe 5th detail\nThe 6th detail\n\n\n\n\n\n\n\n\n\nIn questa pagina sono raccolte le attività da completare per l’avanzamento del progetto. Successivamente alla creazione del sito, diventerà una dashboard di controllo dell’avanzamento generale delle attività di survey."
   }
 ]
