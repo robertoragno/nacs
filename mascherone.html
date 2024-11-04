@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -163,7 +129,7 @@ div.csl-indent {
   <li><a href="#inquadramento-archeologico" id="toc-inquadramento-archeologico" class="nav-link active" data-scroll-target="#inquadramento-archeologico">Inquadramento archeologico</a></li>
   <li><a href="#cronologia-di-occupazione" id="toc-cronologia-di-occupazione" class="nav-link" data-scroll-target="#cronologia-di-occupazione">Cronologia di occupazione</a>
   <ul class="collapse">
-  <li><a href="#tests-icar-models" id="toc-tests-icar-models" class="nav-link" data-scroll-target="#tests-icar-models">Tests: ICAR Models</a></li>
+  <li><a href="#test-icar-models" id="toc-test-icar-models" class="nav-link" data-scroll-target="#test-icar-models">Test: ICAR Models</a></li>
   </ul></li>
   <li><a href="#un-approccio-spazio-temporale" id="toc-un-approccio-spazio-temporale" class="nav-link" data-scroll-target="#un-approccio-spazio-temporale">Un approccio spazio-temporale</a></li>
   <li><a href="#informazioni-supplementari" id="toc-informazioni-supplementari" class="nav-link" data-scroll-target="#informazioni-supplementari">Informazioni supplementari</a>
@@ -239,11 +205,11 @@ p {
 <p>La prima fase di analisi dei dati raccolti sul campo, basata su una distinzione preliminare in macroclassi ceramiche, è stata incentrata sulla ricostruzione delle fasi a maggiore intensità di occupazione. L’analisi aoristica (cumulativa), che ha tenuto in considerazione tutto il materiale ceramico rinvenuto all’interno del perimetro del <strong>Campo 62</strong>, mostra una lunga occupazione dell’area a partire dalla preistoria, in cui sono ben distinguibili tuttavia due fasi ad alta intensità insediativa in età romana. La prima fase di età repubblicana, a cui probabilmente si deve l’impianto della villa, mostra una cesura alla fine dell’età augustea. Una seconda fase di occupazione fra il IV e la prima metà del VI secolo d.C. è ipotizzabile, con una cesura piuttosto netta fra il VII e VIII secolo d.C.</p>
 <p>La cronologia proposta è assolutamente preliminare e necessita rifiniture su più fronti:</p>
 <ol type="1">
-<li>La cronologia delle singole classi ceramiche (<a href="#tbl-datazione-macrocatgorie">Tabella&nbsp;2</a>) deve essere tarata sulla base dei materiali da siti editi noti prossimi a Siponto. Salapia?</li>
+<li>La cronologia delle singole classi ceramiche (<a href="#tbl-datazione-macrocatgorie">Tabella&nbsp;1</a>) deve essere tarata sulla base dei materiali da siti editi noti prossimi a Siponto. Salapia?</li>
 <li>Lo studio dei materiali anforacei e ceramici permetterà di restringere il range cronologico e presumibilmente distinguere meglio le due fasi (o al contrario mostrare maggiore continuità).</li>
 <li>La cronologia può essere rifinita maggiormente attraverso un’indagine statistica più raffinata. Le analisi aoristiche sono un ottimo punto di partenza per la definizione delle fasi di vita di insediamenti non scavati, in cui non sono state effettuate analisi al radiocarbonio, e le cui uniche informazioni cronologiche derivano dalle cronotipologie dei reperti <span class="citation" data-cites="ashbyComparisonMethodsTemporal2013 johnsonAoristicAnalysisSeeds2004">(<a href="#ref-ashbyComparisonMethodsTemporal2013" role="doc-biblioref">Ashby e Bowers 2013</a>; <a href="#ref-johnsonAoristicAnalysisSeeds2004" role="doc-biblioref">Johnson 2004</a>)</span>. I singoli frammenti ceramici sono trattati come ‘blocchi temporali’, che vengono poi sommati per ottenere informazioni sull’intensità di occupazione. La logica è simile alle indagini paleodemografiche basate su datazioni C14: “più cose, più persone”. Tuttavia, la risoluzione cronologica offerta dalle cronotipologie è inferiore alle datazioni basate su radiocarbonio in quanto non ci consentono di misurare il grado di incertezza sulla cronologia proposta.</li>
 </ol>
-<p>Il <strong>punto 3</strong> è particolarmente interessante e complesso da studiare. Un’alternativa bayesiana ai metodi aoristici è stata recentemente proposta in <span class="citation" data-cites="cremaBayesianAlternativeAoristic2024">Crema (<a href="#ref-cremaBayesianAlternativeAoristic2024" role="doc-biblioref">2024</a>)</span>, che offre una base su cui lavorare per passare dal grafico proposto qui di seguito (Fig. 1-2) a delle stime probabilistiche sulle singole fasi cronologiche (definite in blocchi di mezzo secolo; <a href="#fig-ICAR-Mascherone">Figura&nbsp;4</a>).</p>
+<p>Il <strong>punto 3</strong> è particolarmente interessante e complesso da studiare. Un’alternativa bayesiana ai metodi aoristici è stata recentemente proposta in <span class="citation" data-cites="cremaBayesianAlternativeAoristic2024">Crema (<a href="#ref-cremaBayesianAlternativeAoristic2024" role="doc-biblioref">2024</a>)</span>, che offre una base su cui lavorare per passare dal grafico proposto qui di seguito (Fig. 1-2) a delle stime probabilistiche sulle singole fasi cronologiche (definite in questa fase in blocchi di un secolo; <a href="#fig-ICAR-Mascherone-Reduced">Figura&nbsp;5</a>).</p>
 <div class="cell column-screen-inset-shaded quarto-layout-panel" width="10">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
@@ -264,128 +230,9 @@ p {
 </div>
 </div>
 </div>
-<section id="tests-icar-models" class="level3">
-<h3 class="anchored" data-anchor-id="tests-icar-models">Tests: ICAR Models</h3>
-<section id="test-1-original-dataset" class="level4">
-<h4 class="anchored" data-anchor-id="test-1-original-dataset">Test 1: Original dataset</h4>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Importante
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Status: <strong>FAILED</strong></p>
-</div>
-</div>
-<p>Below, the results of the ICAR on the probability matrix used to display the previous figures. The pipeline was the following:</p>
-<ol type="1">
-<li>Start from a .CSV table with a different column for each find class (e.g.&nbsp;Ceramic-Type-A, Ceramic-Type-B, …, Ceramic-Type-n).</li>
-<li>Match each ceramic class with a chronological range.</li>
-<li>If <code>Ceramic-Type-A = 9</code>, then create 9 rows:</li>
-</ol>
-<div id="tbl-input-table-example" class="anchored">
-<table class="table">
-<caption>Tabella&nbsp;1: Input table example. The real dataset has 6605 observations.</caption>
-<thead>
-<tr class="header">
-<th>Index</th>
-<th>Material</th>
-<th>Date_From</th>
-<th>Date_To</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>Ceramic-Type-A</td>
-<td>-200</td>
-<td>100</td>
-</tr>
-<tr class="even">
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-</tr>
-<tr class="odd">
-<td>9</td>
-<td>Ceramic-Type-A</td>
-<td>-200</td>
-<td>100</td>
-</tr>
-<tr class="even">
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-</tr>
-</tbody>
-</table>
-</div>
-<ol start="4" type="1">
-<li>Create a function to convert dates from BCE/CE to BP.</li>
-<li>Convert the dates in the table.</li>
-<li>Create the probability matrix using <code>createProbMat()</code> in <code>baorista</code>.</li>
-<li>Provide the probability matrix to <code>icarfit()</code> and run it with the following code:</li>
-</ol>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Mascherone_icarfit <span class="ot">&lt;-</span> <span class="fu">icarfit</span>(Mascherone_ProbMat,</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>                              <span class="at">niter=</span><span class="dv">10000</span>,</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                              <span class="at">nburnin=</span><span class="dv">5000</span>,</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>                              <span class="at">thin=</span><span class="dv">50</span>,</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>                              <span class="at">nchains=</span><span class="dv">4</span>,</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>                              <span class="at">sigmaPrior =</span> <span class="st">"dexp(rate=100)"</span>,</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>                              <span class="at">parallel=</span><span class="cn">FALSE</span>)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(Mascherone_icarfit, <span class="st">"Mascherone_icarfit.rds"</span>)</span></code><button title="Copia negli appunti" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<ol start="8" type="1">
-<li>The plot in <a href="#fig-ICAR-Mascherone">Figura&nbsp;4</a> shows a restricted range of dates just for visualisation.</li>
-</ol>
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-ICAR-Mascherone" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="mascherone_files/figure-html/fig-ICAR-Mascherone-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figura&nbsp;4: ICAR con parametri [niter=10000, nburnin=5000, thin=50, nchains=4], ristretta al range 2800-201 BP.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<p>The model run in approximately 3.30 hours, and it did not seem to converge very well:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(Mascherone_icarfit2<span class="sc">$</span>rhat<span class="sc">$</span>psrf)</span></code><button title="Copia negli appunti" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>   Point est.       Upper C.I.    
- Min.   :0.9924   Min.   :0.9942  
- 1st Qu.:1.0370   1st Qu.:1.0972  
- Median :1.1994   Median :1.6492  
- Mean   :1.2049   Mean   :2.1474  
- 3rd Qu.:1.3496   3rd Qu.:2.8609  
- Max.   :1.5473   Max.   :5.5862  </code></pre>
-</div>
-</div>
-</section>
-<section id="test-2-cleaned-dataset" class="level4">
-<h4 class="anchored" data-anchor-id="test-2-cleaned-dataset">Test 2: Cleaned dataset</h4>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Consiglio
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Status: <strong>COMPLETED</strong> Con: The probabilities approach zero almost anytime; the resolution had to be lower.</p>
-</div>
-</div>
-<p>In this test, I attempt to perform the ICAR on a dataset that does not have all the background noise (i.e.&nbsp;materials spanning very wide chronologies, as laterizi_tegole, ceramica_comune, ceramica_fuoco, ceramica_impasto, ceramica_non_identificata). This test has performed better, with two clear peaks corresponding to the same peaks as in the aoristic analysis.</p>
+<section id="test-icar-models" class="level3">
+<h3 class="anchored" data-anchor-id="test-icar-models">Test: ICAR Models</h3>
+<p>In questo tentativo, vengono applicati gli ICAR su un dataset privato del rumore di fondo (cioè materiali che abbracciano cronologie molto ampie, come laterizi_tegole, ceramica_comune, ceramica_fuoco, ceramica_impasto, ceramica_non_identificata). Questo test ha fornito risultati migliori (rispetto ad un precedente test che richiedeva dalle 3:30 alle 4 ore), con due picchi chiari che corrispondono agli stessi picchi dell’analisi aoristica.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Aoristic</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">ICAR</a></li></ul>
 <div class="tab-content">
@@ -395,7 +242,7 @@ Consiglio
 <div id="fig-aoristic-Mascherone-Reduced" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="mascherone_files/figure-html/fig-aoristic-Mascherone-Reduced-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figura&nbsp;5: Somma aoristica dei materiali rinvenuti nel Campo 62, datati in base a macroclassi cronotipologiche. Inquadramento cronologico dei materiali archeologici dal dataset pulito e ristretto cronologicamente.</figcaption>
+<figcaption class="figure-caption">Figura&nbsp;4: Somma aoristica dei materiali rinvenuti nel Campo 62, datati in base a macroclassi cronotipologiche. Inquadramento cronologico dei materiali archeologici dal dataset pulito e ristretto cronologicamente.</figcaption>
 </figure>
 </div>
 </div>
@@ -407,7 +254,7 @@ Consiglio
 <div id="fig-ICAR-Mascherone-Reduced" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="mascherone_files/figure-html/fig-ICAR-Mascherone-Reduced-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figura&nbsp;6: ICAR sul dataset pulito dal rumore di fondo con parametri [niter=10000, nburnin=5000, thin=100, nchains=4], ristretta al range 3000-101 BP.</figcaption>
+<figcaption class="figure-caption">Figura&nbsp;5: ICAR sul dataset pulito dal rumore di fondo con parametri [niter=10000, nburnin=5000, thin=100, nchains=4], ristretta al range 3000-101 BP.</figcaption>
 </figure>
 </div>
 </div>
@@ -415,7 +262,6 @@ Consiglio
 </div>
 </div>
 </div>
-</section>
 </section>
 </section>
 <section id="un-approccio-spazio-temporale" class="level2">
@@ -435,7 +281,7 @@ Consiglio
 <div class="cell-output-display">
 <div id="tbl-datazione-macrocatgorie" class="anchored">
 <table class="lightable-minimal table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>Tabella&nbsp;2: Datazione proposta per le macroclassi di materiali archeologici rinvenuti durante le indagini di ricognizione di superficie. I valori sono in anni per necessità computazionali, e sono espressi in negativo per le datazioni a.C. e in positivo per le datazioni d.C. Le datazioni sono da considerarsi assolutamente come preliminari e vanno tarate in base alle pregresse ricerche sul territorio.</caption>
+<caption>Tabella&nbsp;1: Datazione proposta per le macroclassi di materiali archeologici rinvenuti durante le indagini di ricognizione di superficie. I valori sono in anni per necessità computazionali, e sono espressi in negativo per le datazioni a.C. e in positivo per le datazioni d.C. Le datazioni sono da considerarsi assolutamente come preliminari e vanno tarate in base alle pregresse ricerche sul territorio.</caption>
 <colgroup>
 <col style="width: 33%">
 <col style="width: 33%">
