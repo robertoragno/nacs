@@ -165,7 +165,7 @@
     "href": "progress.html",
     "title": "Avanzamento",
     "section": "",
-    "text": "Campi ricogniti\n90\n\nArea totale: \n253.51\nha\n\n\n\n\n\n\n\n\n\n\nUT individuate\n59\n\nArea totale: \n47.54\nha\n\n\n\n\n\n\n\n\n\n\nTarget (%)\n19\nArea dei campi indagati sul totale dell'area campione n. 1."
+    "text": "Campi ricogniti\n90\n\nArea totale: \n253.51\nha\n\n\n\n\n\n\n\n\n\n\nUT individuate\n63\n\nArea totale: \n50.39\nha\n\n\n\n\n\n\n\n\n\n\nTarget (%)\n19\nArea dei campi indagati sul totale dell'area campione n. 1."
   },
   {
     "objectID": "progress.html#to-do-list",
@@ -186,7 +186,7 @@
     "href": "progress.html#generale",
     "title": "Avanzamento",
     "section": "Generale",
-    "text": "Generale\nIn questa pagina sono raccolte le attività da completare per l’avanzamento del progetto. Successivamente alla creazione del sito, la pagina diventerà una dashboard di controllo dell’avanzamento generale delle attività di survey.\n\nTabella riepilogativa dei task da completare in generale post-survey.\n\n\n\n\n\n\nStato\nDescrizione\n\n\n\n\nIn avanzamento\nImportazione delle informazioni dei campi dal 21 al 38 e 41,44,48 su Google Sheets. Disegnare il poligono del campo 28.\n\n\nIn avanzamento\nImportazione delle UT sul GIS. Mancano delle UT disegnate a mano sulle stampe delle mappe. In particolare: 31 (area di frammenti nel campo 29), 33 (blocchi di reimpiego. In che campo? 4?), 34 (area di frammenti nel campo 36), 36 (area di frammenti nel campo 48).\n\n\nNon completato\n…\n\n\nNon completato\nScript che esporta la scheda di ogni UT\n\n\nNon completato\nCompletare i campi non tracciati\n\n\nNon completato\nAggiungere punto del muro di cinta romano?\n\n\nNon completato\nCreare tabelle con statistiche descrittive generali delle UT e dei campi (quanti uliveti, quanti campi non accessibili, ecc.)\n\n\nNon completato\nAggiustare date survey su Google Sheets e reimportare i file.\n\n\n\nAggiungere area media coperta giornalmente"
+    "text": "Generale\nIn questa pagina sono raccolte le attività da completare per l’avanzamento del progetto. Successivamente alla creazione del sito, la pagina diventerà una dashboard di controllo dell’avanzamento generale delle attività di survey.\n\nTabella riepilogativa dei task da completare in generale post-survey.\n\n\n\n\n\n\nStato\nDescrizione\n\n\n\n\nCompletato\nImportazione delle informazioni dei campi dal 21 al 38 e 41,44,48 su Google Sheets. Disegnare il poligono del campo 28.\n\n\nCompletato\nImportazione delle UT sul GIS. Mancano delle UT disegnate a mano sulle stampe delle mappe. In particolare: 31 (area di frammenti nel campo 29), 33 (blocchi di reimpiego. In che campo? 4?), 34 (area di frammenti nel campo 36), 36 (area di frammenti nel campo 48).\n\n\nNon completato\n…\n\n\nNon completato\nScript che esporta la scheda di ogni UT\n\n\nNon completato\nCompletare i campi non tracciati\n\n\nNon completato\nAggiungere punto del muro di cinta romano?\n\n\nNon completato\nCreare tabelle con statistiche descrittive generali delle UT e dei campi (quanti uliveti, quanti campi non accessibili, ecc.)\n\n\nNon completato\nAggiustare date survey su Google Sheets e reimportare i file.\n\n\n\nAggiungere area media coperta giornalmente"
   },
   {
     "objectID": "progress.html#row",
