@@ -264,5 +264,19 @@
     "title": "Villa Mascherone",
     "section": "Tessere",
     "text": "Tessere\n\n\n\n\n\nFigura 11: Mappa con la sovrapposizione (casuale) del numero di tessere musive rinvenute su ogni quadrato."
+  },
+  {
+    "objectID": "fields.html",
+    "href": "fields.html",
+    "title": "Campi",
+    "section": "",
+    "text": "Ogni campo dispone di una scheda informativa dettagliata. Utilizza l’ordinamento per colonna o la funzione di ricerca per trovare rapidamente il campo desiderato. Clicca sul numero per accedere alla scheda corrispondente.\n\n\n\n\n\n\n\n\n\n\n\n\n\n Torna in cima"
+  },
+  {
+    "objectID": "fields.html#sec-fields",
+    "href": "fields.html#sec-fields",
+    "title": "Northern Apulia Coastal Survey",
+    "section": "",
+    "text": "Warning: package 'htmltools' was built under R version 4.2.3"
   }
 ]
