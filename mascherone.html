@@ -236,7 +236,7 @@ p {
 </div>
 <section id="test-icar-models" class="level3">
 <h3 class="anchored" data-anchor-id="test-icar-models">Test: ICAR Models</h3>
-<p>In questo tentativo, vengono applicati gli ICAR su un dataset privato del rumore di fondo (cioè materiali che abbracciano cronologie molto ampie, come laterizi_tegole, ceramica_comune, ceramica_fuoco, ceramica_impasto, ceramica_non_identificata). Questo test ha fornito risultati migliori (rispetto ad un precedente test che richiedeva dalle 3:30 alle 4 ore), con due picchi chiari che corrispondono agli stessi picchi dell’analisi aoristica.</p>
+<p>In questo tentativo, vengono applicati gli ICAR su un dataset privato del rumore di fondo (cioè materiali che abbracciano cronologie molto ampie, come laterizi, ceramica_comune, ceramica_fuoco, ceramica_impasto, ceramica_non_identificata). Questo test ha fornito risultati migliori (rispetto ad un precedente test che richiedeva dalle 3:30 alle 4 ore), con due picchi chiari che corrispondono agli stessi picchi dell’analisi aoristica.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Aoristic</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">ICAR</a></li></ul>
 <div class="tab-content">
@@ -414,19 +414,19 @@ Cronologia
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">laterizi_tegole</td>
+<td style="text-align: left;">laterizi</td>
 <td style="text-align: right;">-399</td>
 <td style="text-align: right;">1599</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">tegola_romana_alette</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">200</td>
+<td style="text-align: left;">tegole_piane_romane</td>
+<td style="text-align: right;">-300</td>
+<td style="text-align: right;">699</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">tegola_pettinata</td>
-<td style="text-align: right;">501</td>
-<td style="text-align: right;">700</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">699</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">macine</td>
@@ -441,7 +441,7 @@ Cronologia
 <tr class="even">
 <td style="text-align: left;">marmo</td>
 <td style="text-align: right;">-200</td>
-<td style="text-align: right;">600</td>
+<td style="text-align: right;">599</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">tessere_musive</td>
@@ -449,159 +449,189 @@ Cronologia
 <td style="text-align: right;">499</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ceramica_comune</td>
-<td style="text-align: right;">-299</td>
-<td style="text-align: right;">1700</td>
+<td style="text-align: left;">ceramica_acroma</td>
+<td style="text-align: right;">-399</td>
+<td style="text-align: right;">1799</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ceramica_comune_medievale</td>
-<td style="text-align: right;">1001</td>
-<td style="text-align: right;">1500</td>
+<td style="text-align: left;">ceramica_acroma_medievale</td>
+<td style="text-align: right;">1200</td>
+<td style="text-align: right;">1599</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ceramica_protomaiolica</td>
-<td style="text-align: right;">1250</td>
-<td style="text-align: right;">1400</td>
+<td style="text-align: right;">1200</td>
+<td style="text-align: right;">1399</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ceramica_dipinta</td>
 <td style="text-align: right;">-399</td>
-<td style="text-align: right;">400</td>
+<td style="text-align: right;">1399</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ceramica_RMR</td>
-<td style="text-align: right;">1201</td>
-<td style="text-align: right;">1325</td>
+<td style="text-align: right;">1200</td>
+<td style="text-align: right;">1399</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ceramica_vernice_rossa_interna</td>
-<td style="text-align: right;">-99</td>
-<td style="text-align: right;">100</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">199</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ceramica_smaltata</td>
-<td style="text-align: right;">1500</td>
-<td style="text-align: right;">1700</td>
+<td style="text-align: right;">1400</td>
+<td style="text-align: right;">1899</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ceramica_invetriata</td>
-<td style="text-align: right;">1100</td>
-<td style="text-align: right;">1700</td>
+<td style="text-align: right;">1200</td>
+<td style="text-align: right;">1899</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ceramica_invetriata_verde</td>
 <td style="text-align: right;">1201</td>
-<td style="text-align: right;">1400</td>
+<td style="text-align: right;">1399</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ceramica_invetriata_graffita</td>
-<td style="text-align: right;">1175</td>
-<td style="text-align: right;">1599</td>
+<td style="text-align: left;">ceramica_graffita_bizantina</td>
+<td style="text-align: right;">1100</td>
+<td style="text-align: right;">1299</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">ceramica_invetriata_graffita</td>
+<td style="text-align: right;">1500</td>
+<td style="text-align: right;">1899</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">ceramica_invetriata_eta_moderna</td>
-<td style="text-align: right;">1450</td>
-<td style="text-align: right;">1700</td>
+<td style="text-align: right;">1400</td>
+<td style="text-align: right;">1899</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_maiolica</td>
+<td style="text-align: right;">1400</td>
+<td style="text-align: right;">1899</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">pareti_sottili</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">100</td>
+<td style="text-align: right;">-25</td>
+<td style="text-align: right;">150</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ceramica_TSI</td>
-<td style="text-align: right;">-50</td>
-<td style="text-align: right;">150</td>
+<td style="text-align: right;">-25</td>
+<td style="text-align: right;">99</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ceramica_TSA</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">101</td>
 <td style="text-align: right;">650</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ceramica_TSA_A</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">175</td>
 <td style="text-align: right;">299</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ceramica_TSA_C</td>
-<td style="text-align: right;">300</td>
+<td style="text-align: right;">175</td>
 <td style="text-align: right;">499</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ceramica_TSA_D</td>
 <td style="text-align: right;">300</td>
-<td style="text-align: right;">650</td>
+<td style="text-align: right;">625</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ceramica_eastern_sigillata</td>
-<td style="text-align: right;">-50</td>
-<td style="text-align: right;">150</td>
+<td style="text-align: right;">-25</td>
+<td style="text-align: right;">299</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ceramica_CAC</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">299</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: right;">325</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ceramica_LRCW</td>
-<td style="text-align: right;">301</td>
-<td style="text-align: right;">699</td>
+<td style="text-align: left;">ceramica_PRSW</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">599</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ceramica_fuoco</td>
-<td style="text-align: right;">-200</td>
-<td style="text-align: right;">1700</td>
+<td style="text-align: right;">-399</td>
+<td style="text-align: right;">1799</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ceramica_ICW</td>
 <td style="text-align: right;">201</td>
-<td style="text-align: right;">399</td>
+<td style="text-align: right;">299</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ceramica_fuoco_invetriata</td>
-<td style="text-align: right;">1200</td>
-<td style="text-align: right;">1599</td>
+<td style="text-align: right;">1300</td>
+<td style="text-align: right;">1899</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ceramica_lucerna</td>
-<td style="text-align: right;">-200</td>
-<td style="text-align: right;">1700</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">599</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ceramica_dolia_GC</td>
-<td style="text-align: right;">-700</td>
-<td style="text-align: right;">1000</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ceramica_impasto</td>
-<td style="text-align: right;">-6000</td>
-<td style="text-align: right;">-700</td>
+<td style="text-align: right;">-6500</td>
+<td style="text-align: right;">-600</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ceramica_vernice_nera</td>
-<td style="text-align: right;">-400</td>
+<td style="text-align: right;">-499</td>
 <td style="text-align: right;">-100</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ceramica_amphoras</td>
-<td style="text-align: right;">-400</td>
-<td style="text-align: right;">1599</td>
+<td style="text-align: right;">-199</td>
+<td style="text-align: right;">599</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">ceramica_amphoras_italic</td>
+<td style="text-align: right;">-199</td>
+<td style="text-align: right;">199</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_amphoras_african</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">599</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_amphoras_eastern</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">550</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">ceramica_geometrica</td>
 <td style="text-align: right;">-800</td>
 <td style="text-align: right;">-300</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">ceramica_pasta_grigia</td>
-<td style="text-align: right;">-150</td>
-<td style="text-align: right;">-50</td>
+<td style="text-align: right;">-199</td>
+<td style="text-align: right;">-1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_non_identificata</td>
+<td style="text-align: right;">-399</td>
+<td style="text-align: right;">1799</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ceramica_non_identificata</td>
-<td style="text-align: right;">-2000</td>
-<td style="text-align: right;">1800</td>
+<td style="text-align: left;">intonaco</td>
+<td style="text-align: right;">-200</td>
+<td style="text-align: right;">299</td>
 </tr>
 </tbody>
 </table>
