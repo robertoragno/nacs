@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Northern Apulia Coastal Survey - Schede di unità topografiche (UT)</title>
+<title>Northern Apulia Coastal Survey - Cronologia</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -53,7 +53,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -91,10 +91,21 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./mascherone.html" rel="" target="">
- <span class="menu-text">Villa Mascherone</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-risultati" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Risultati</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-risultati">    
+        <li>
+    <a class="dropdown-item" href="./chronology.html" rel="" target="">
+ <span class="dropdown-text">Cronologia</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./mascherone.html" rel="" target="">
+ <span class="dropdown-text">Villa Mascherone</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./progress.html" rel="" target="">
  <span class="menu-text">Avanzamento</span></a>
@@ -114,13 +125,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Schede di unità topografiche (UT)</h1>
+<h1 class="title">Cronologia</h1>
 </div>
 
 
@@ -128,6 +141,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Data di Pubblicazione</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">9 gennaio 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -135,17 +154,48 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="cell">
+<style type="text/css">
+p {
+  text-align: justify
+}
+
+</style>
 </div>
-<div class="callout-body-container">
-<p>Per la corretta visualizzazione della tabella si consiglia l’utilizzo di un computer o tablet. Al momento, la visione non è ottimizzata per dispositivi mobili con schermi di dimensioni ridotte. Se si utilizza un cellulare, muoversi con le dita per visualizzare le informazioni sulla destra (es. mappa).</p>
+<p>La datazione derivante dalle tipocronologie ceramiche è tipicamente espressa in forma di intervalli di tempo, riflettendo l’incertezza intrinseca nella classificazione cronologica. Ogni frammento ceramico è quindi associato a un intervallo specifico, che può essere più o meno ampio a seconda della precisione della tipocronologia o di eventuali contesti stratigrafici. L’approccio aoristico sfrutta questi intervalli distribuendo la probabilità in modo uniforme lungo tutto l’intervallo, evitando di scegliere arbitrariamente una data centrale (come invece spesso accade). Questo metodo permette di analizzare materiali con datezioni diverse in maniera coerente, evidenziando concentrazioni cronologiche nei dati attraverso il tempo.</p>
+<p>Tuttavia, la somma aoristica tratta ogni intervallo cronologico come indipendente dagli altri. Qui entrano in gioco i modelli ICAR (Intrinsically Conditional Autoregressive), che si basano sul concetto di autocorrelazione temporale. Questo principio, simile all’autocorrelazione spaziale enunciata nella prima legge della geografia di Waldo Tobler (“Ogni cosa è legata a ogni altra, ma le cose vicine sono più legate di quelle lontane”), afferma che periodi vicini nel tempo tendono ad influenzarsi reciprocamente. Ad esempio, se troviamo una grande quantità di ceramica databile a un certo periodo, è ragionevole aspettarsi che anche il periodo immediatamente successivo sia ben rappresentato, a meno che non ci siano evidenze di un’interruzione netta.</p>
+<p>Il grafico ICAR riportato di seguito incorpora questo principio di continuità temporale. La stima media a posteriori (posterior mean), rappresentata dai punti neri, è la media delle distribuzioni posteriori per ciascun intervallo temporale, calcolata dopo aver integrato i dati osservati con le assunzioni del modello. Le fasce colorate (50% HPDI in blu scuro e 90% HPDI in blu chiaro) indicano invece gli intervalli di credibilità per ciascun punto temporale. Questi intervalli rappresentano l’incertezza associata alle stime, fornendo un quadro trasparente e probabilistico dei risultati. Questo approccio non solo smussa le fluttuazioni casuali nei dati, ma fornisce stime più robuste, soprattutto nei periodi in cui i dati sono scarsi. Nei momenti con poche osservazioni, i modelli ICAR “prendono in prestito” informazioni dai periodi vicini, producendo una ricostruzione cronologica più continua e interpretabile.</p>
+<p>Questo approccio non solo smussa le fluttuazioni casuali nei dati, ma fornisce stime più robuste, soprattutto nei periodi in cui i dati sono scarsi. Nei momenti con poche osservazioni, i modelli ICAR “prendono in prestito” informazioni dai periodi vicini, producendo una ricostruzione cronologica più continua e interpretabile. Inoltre, l’autocorrelazione temporale consente di modellare processi graduali, come la diffusione o il declino di fenomeni culturali, evitando stime irrealisticamente frammentarie.</p>
+<p>Rispetto alla somma aoristica, i modelli ICAR offrono due vantaggi principali: permettono di evidenziare processi continui e riducono l’impatto di anomalie o lacune nei dati. Grazie alla modellazione bayesiana, l’inclusione dell’incertezza fornisce non solo le tendenze principali, ma anche una misura chiara dell’affidabilità delle stime.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Aoristic</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">ICAR</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-aoristic-General-NACS-Reduced" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="chronology_files/figure-html/fig-aoristic-General-NACS-Reduced-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figura&nbsp;1: Somma aoristica dei materiali rinvenuti durante le ricognizioni del 2024, datati in base a macroclassi cronotipologiche. Inquadramento cronologico dei materiali archeologici dal dataset pulito e ristretto cronologicamente. Al momento, il sito di Mascherone è escluso.</figcaption>
+</figure>
 </div>
 </div>
 </div>
-<p>Ogni unità topografica (UT), dispone di una scheda informativa dettagliata. Utilizza l’ordinamento per colonna per trovare rapidamente il campo desiderato. Clicca sul numero per accedere alla scheda corrispondente.</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-ICAR-General-NACS-Reduced" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="chronology_files/figure-html/fig-ICAR-General-NACS-Reduced-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figura&nbsp;2: ICAR sul dataset pulito dal rumore di fondo con parametri [niter=10000, nburnin=5000, thin=100, nchains=4], ristretta al range .</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 
 
