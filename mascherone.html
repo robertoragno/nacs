@@ -156,7 +156,6 @@ div.csl-indent {
   <li><a href="#cronologia" id="toc-cronologia" class="nav-link" data-scroll-target="#cronologia">Cronologia</a>
   <ul class="collapse">
   <li><a href="#test-icar-models" id="toc-test-icar-models" class="nav-link" data-scroll-target="#test-icar-models">Test: ICAR Models</a></li>
-  <li><a href="#test-stan" id="toc-test-stan" class="nav-link" data-scroll-target="#test-stan">Test: Stan</a></li>
   </ul></li>
   <li><a href="#distribuzione-spaziale-dei-reperti" id="toc-distribuzione-spaziale-dei-reperti" class="nav-link" data-scroll-target="#distribuzione-spaziale-dei-reperti">Distribuzione spaziale dei reperti</a></li>
   <li><a href="#un-approccio-spazio-temporale" id="toc-un-approccio-spazio-temporale" class="nav-link" data-scroll-target="#un-approccio-spazio-temporale">Un approccio spazio-temporale</a></li>
@@ -247,7 +246,7 @@ p {
 </div>
 <section id="test-icar-models" class="level3">
 <h3 class="anchored" data-anchor-id="test-icar-models">Test: ICAR Models</h3>
-<p>In questo tentativo, vengono applicati gli ICAR su un dataset privato del rumore di fondo (cioè materiali che abbracciano cronologie molto ampie, come laterizi, ceramica_comune, ceramica_fuoco, ceramica_impasto, ceramica_non_identificata). Questo test ha fornito risultati migliori (rispetto ad un precedente test che richiedeva dalle 3:30 alle 4 ore), con due picchi chiari che corrispondono agli stessi picchi dell’analisi aoristica.</p>
+<p>In questo tentativo, vengono applicati gli ICAR su un dataset privato del rumore di fondo (cioè materiali che abbracciano cronologie molto ampie, come laterizi, ceramica_comune, ceramica_fuoco, ceramica_impasto, ceramica_non_identificata). Questo test ha fornito risultati migliori, con due picchi chiari che corrispondono agli stessi picchi dell’analisi aoristica.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Aoristic</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">ICAR</a></li></ul>
 <div class="tab-content">
@@ -269,28 +268,12 @@ p {
 <div id="fig-ICAR-Mascherone-Reduced" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="mascherone_files/figure-html/fig-ICAR-Mascherone-Reduced-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figura&nbsp;5: ICAR sul dataset pulito dal rumore di fondo con parametri [niter=10000, nburnin=5000, thin=100, nchains=4], ristretta al range 3000-101 BP.</figcaption>
+<figcaption class="figure-caption">Figura&nbsp;5: ICAR sul dataset pulito dal rumore di fondo con parametri [niter=200000, nburnin=100000, thin=100, nchains=4], ristretta al range 3000-101 BP.</figcaption>
 </figure>
 </div>
 </div>
 </div>
 </div>
-</div>
-</div>
-</section>
-<section id="test-stan" class="level3">
-<h3 class="anchored" data-anchor-id="test-stan">Test: Stan</h3>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Attenzione
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Codice rimosso perché in fase di programmazione.</p>
 </div>
 </div>
 </section>
