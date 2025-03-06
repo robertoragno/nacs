@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Northern Apulia Coastal Survey - Cronologia</title>
+<title>Northern Apulia Coastal Landscape - Cronologia</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -49,6 +49,9 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -64,7 +67,7 @@ ul.task-list li input[type="checkbox"] {
     <img src="./images/logo.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Northern Apulia Coastal Survey</span>
+    <span class="navbar-title">Northern Apulia Coastal Landscape</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Attiva/disattiva la navigazione" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -126,7 +129,16 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">In questa pagina</h2>
+   
+  <ul>
+  <li><a href="#informazioni-supplementari" id="toc-informazioni-supplementari" class="nav-link active" data-scroll-target="#informazioni-supplementari">Informazioni supplementari</a>
+  <ul class="collapse">
+  <li><a href="#macroclassi-cronotipologiche" id="toc-macroclassi-cronotipologiche" class="nav-link" data-scroll-target="#macroclassi-cronotipologiche">Macroclassi cronotipologiche</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -144,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Data di Pubblicazione</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">18 febbraio 2025</p>
+      <p class="date">6 marzo 2025</p>
     </div>
   </div>
   
@@ -163,8 +175,8 @@ p {
 </style>
 </div>
 <p>La datazione derivante dalle tipocronologie ceramiche è tipicamente espressa in forma di intervalli di tempo, riflettendo l’incertezza intrinseca nella classificazione cronologica. Ogni frammento ceramico è quindi associato a un intervallo specifico, che può essere più o meno ampio a seconda della precisione della tipocronologia o di eventuali contesti stratigrafici. L’approccio aoristico utilizza questi intervalli senza forzare una data specifica: invece di scegliere un punto centrale arbitrario, distribuisce uniformemente la presenza di ciascun reperto lungo tutto il suo intervallo di datazione. Questo metodo consente di analizzare materiali con datazioni diverse in maniera coerente, evidenziando quali periodi sono più frequentemente coperti dagli intervalli di datazione.</p>
-<p>Tuttavia, è fondamentale distinguere tra frequenze e probabilità di occupazione o esistenza. La somma aoristica non rappresenta la reale cronologia di occupazione di un sito: essa mostra semplicemente quanti reperti, in base alle loro date assegnate, potrebbero esistere in un dato periodo, senza fornire una misura diretta dell’intensità o continuità dell’occupazione. In altre parole, non è una stima della probabilità che il sito fosse effettivamente occupato in un dato momento, ma solo un conteggio ponderato dei possibili intervalli di esistenza dei reperti. Questo significa che un picco nella somma aoristica non indica necessariamente un’intensificazione dell’occupazione, ma potrebbe riflettere solo la maggiore durata delle tipologie ceramiche associate a quel periodo o una migliore documentazione archeologica.</p>
-<p>Per superare alcune di queste limitazioni, entrano in gioco i modelli ICAR (Intrinsically Conditional Autoregressive), che incorporano il concetto di autocorrelazione temporale. Analogamente all’autocorrelazione spaziale espressa dalla prima legge della geografia di Waldo Tobler (“Ogni cosa è legata a ogni altra, ma le cose vicine sono più legate di quelle lontane”), i modelli ICAR assumono che periodi vicini nel tempo siano probabilmente simili in termini di occupazione. Tuttavia, anche l’ICAR non produce una cronologia diretta di occupazione, ma un modello statistico che regolarizza le frequenze aoristiche, riducendo la frammentazione artificiale dei dati e producendo una stima più continua della distribuzione dei reperti nel tempo.</p>
+<p>È fondamentale distinguere tra frequenze e probabilità di occupazione o esistenza. La somma aoristica non rappresenta la reale cronologia di occupazione di un sito, ma mostra semplicemente quanti reperti, in base alle loro date assegnate, potrebbero esistere in un dato periodo, senza fornire una misura diretta dell’intensità o continuità dell’occupazione. In altre parole, non è una stima della probabilità che il sito fosse effettivamente occupato in un dato momento, ma solo un conteggio ponderato dei possibili intervalli di esistenza dei reperti. Questo significa che un picco nella somma aoristica non indica necessariamente un’intensificazione dell’occupazione, ma potrebbe riflettere solo la maggiore durata delle tipologie ceramiche associate a quel periodo o una migliore documentazione archeologica.</p>
+<p>Per superare alcune di queste limitazioni, abbiamo utilizzato i modelli ICAR (Intrinsically Conditional Autoregressive), che incorporano il concetto di autocorrelazione temporale. Analogamente all’autocorrelazione spaziale espressa dalla prima legge della geografia di Waldo Tobler (“Ogni cosa è legata a ogni altra, ma le cose vicine sono più legate di quelle lontane”), i modelli ICAR assumono che periodi vicini nel tempo siano probabilmente simili in termini di occupazione. Così come per la somma aoristica, anche l’ICAR non produce una cronologia diretta di occupazione, ma un modello statistico che regolarizza le frequenze aoristiche, riducendo la frammentazione artificiale dei dati e producendo una stima più continua della distribuzione dei reperti nel tempo.</p>
 <p>Il grafico ICAR riportato di seguito incorpora questo principio di continuità temporale. La stima media a posteriori (posterior mean), rappresentata dai punti neri, è la media delle distribuzioni posteriori per ciascun intervallo temporale, calcolata integrando i dati osservati con le assunzioni del modello. Le fasce colorate (50% HPDI in blu scuro e 90% HPDI in blu chiaro) rappresentano gli intervalli di credibilità, fornendo una misura dell’incertezza associata a ciascuna stima. Questo approccio non solo smussa le fluttuazioni casuali nei dati, ma fornisce stime più robuste, soprattutto nei periodi in cui le osservazioni sono scarse. Quando i dati sono limitati, il modello ICAR “prende in prestito” informazioni dai periodi adiacenti, producendo una ricostruzione cronologica più coerente e interpretabile.</p>
 <p>Rispetto alla somma aoristica, i modelli ICAR offrono due vantaggi principali: permettono di evidenziare processi continui e riducono l’impatto di anomalie o lacune nei dati. Grazie alla modellazione bayesiana, l’inclusione dell’incertezza fornisce non solo le tendenze principali, ma anche una misura chiara dell’affidabilità delle stime.</p>
 <p>Entrambi i metodi operano sui dati a disposizione, che sono una rappresentazione indiretta dell’occupazione basata sulla tipocronologia ceramica. Per ottenere una vera ricostruzione della cronologia di occupazione, sarebbe necessario integrare questi risultati con altri tipi di dati, come scavi (e quindi stratigrafie), datazioni assolute o indicatori funzionali della presenza umana.</p>
@@ -197,8 +209,290 @@ p {
 </div>
 </div>
 </div>
+<section id="informazioni-supplementari" class="level2">
+<h2 class="anchored" data-anchor-id="informazioni-supplementari">Informazioni supplementari</h2>
+<section id="macroclassi-cronotipologiche" class="level3">
+<h3 class="anchored" data-anchor-id="macroclassi-cronotipologiche">Macroclassi cronotipologiche</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-datazione-macrocatgorie" class="anchored">
+<table class="lightable-minimal table table-sm table-striped small" data-quarto-postprocess="true">
+<caption>Tabella&nbsp;1: Datazione proposta per le macroclassi di materiali archeologici rinvenuti durante le indagini di ricognizione di superficie. I valori sono in anni per necessità computazionali, e sono espressi in negativo per le datazioni a.C. e in positivo per le datazioni d.C.</caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" style="text-align: left; empty-cells: hide; border-bottom: hidden;"></th>
+<th colspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-bottom: hidden; padding-bottom: 0; padding-left: 3px; padding-right: 3px;"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Cronologia
+</div></th>
+</tr>
+<tr class="odd">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Materiale</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Datazione_da</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Datazione_a</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">laterizi</td>
+<td style="text-align: right;">-399</td>
+<td style="text-align: right;">1599</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tegole_piane_romane</td>
+<td style="text-align: right;">-300</td>
+<td style="text-align: right;">699</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tegola_pettinata</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">699</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">macine</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">scorie_metalliche</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_acroma</td>
+<td style="text-align: right;">-399</td>
+<td style="text-align: right;">1799</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_acroma_medievale</td>
+<td style="text-align: right;">1200</td>
+<td style="text-align: right;">1599</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_protomaiolica</td>
+<td style="text-align: right;">1200</td>
+<td style="text-align: right;">1399</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_dipinta</td>
+<td style="text-align: right;">-399</td>
+<td style="text-align: right;">1399</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_RMR</td>
+<td style="text-align: right;">1200</td>
+<td style="text-align: right;">1399</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_vernice_rossa_interna</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">199</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_smaltata</td>
+<td style="text-align: right;">1400</td>
+<td style="text-align: right;">1899</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_invetriata</td>
+<td style="text-align: right;">1200</td>
+<td style="text-align: right;">1899</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_invetriata_verde</td>
+<td style="text-align: right;">1201</td>
+<td style="text-align: right;">1399</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_doppio_bagno</td>
+<td style="text-align: right;">1300</td>
+<td style="text-align: right;">1499</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_vetrina_pesante</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: right;">1099</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_invetriata_graffita</td>
+<td style="text-align: right;">1500</td>
+<td style="text-align: right;">1899</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_graffita_bizantina</td>
+<td style="text-align: right;">1100</td>
+<td style="text-align: right;">1299</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_maiolica</td>
+<td style="text-align: right;">1400</td>
+<td style="text-align: right;">1899</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_invetriata_eta_moderna</td>
+<td style="text-align: right;">1400</td>
+<td style="text-align: right;">1899</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pareti_sottili</td>
+<td style="text-align: right;">-25</td>
+<td style="text-align: right;">150</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_TSI</td>
+<td style="text-align: right;">-25</td>
+<td style="text-align: right;">99</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_TSA</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: right;">650</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_TSA_A</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: right;">299</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_TSA_C</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: right;">499</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_TSA_D</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">625</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_eastern_sigillata</td>
+<td style="text-align: right;">-25</td>
+<td style="text-align: right;">299</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_CAC</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: right;">325</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_PRSW</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">599</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_fuoco</td>
+<td style="text-align: right;">-399</td>
+<td style="text-align: right;">1799</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_ICW</td>
+<td style="text-align: right;">201</td>
+<td style="text-align: right;">299</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_fuoco_invetriata</td>
+<td style="text-align: right;">1300</td>
+<td style="text-align: right;">1899</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_lucerna</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">599</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_dolia_GC</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_impasto</td>
+<td style="text-align: right;">-6000</td>
+<td style="text-align: right;">-600</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_vernice_nera</td>
+<td style="text-align: right;">-499</td>
+<td style="text-align: right;">-100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_amphoras</td>
+<td style="text-align: right;">-199</td>
+<td style="text-align: right;">599</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_amphoras_italic</td>
+<td style="text-align: right;">-199</td>
+<td style="text-align: right;">199</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_amphoras_african</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">599</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_amphoras_eastern</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">550</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_geometrica</td>
+<td style="text-align: right;">-800</td>
+<td style="text-align: right;">-300</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_pasta_grigia</td>
+<td style="text-align: right;">-199</td>
+<td style="text-align: right;">-1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ceramica_non_identificata</td>
+<td style="text-align: right;">-399</td>
+<td style="text-align: right;">1799</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pesi_telaio</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pesi_pesca</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">intonaco</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">vetro</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">selce_lavorata</td>
+<td style="text-align: right;">-6000</td>
+<td style="text-align: right;">-600</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pipa_fittile</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 
+</div>
+</div>
+
+
+</section>
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Torna in cima</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
