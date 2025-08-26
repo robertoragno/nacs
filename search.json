@@ -158,7 +158,7 @@
     "href": "progress.html#pagina-villa-mascherone",
     "title": "Avanzamento",
     "section": "Pagina ‘Villa Mascherone’",
-    "text": "Pagina ‘Villa Mascherone’\n\nTabella riepilogativa dei task da completare nella pagina mascherone.qmd\n\n\n\n\n\n\nStato\nDescrizione\n\n\n\n\nCompletato\nRenderizzazione della pianta della villa e del campo in bianco e nero semplice;\n\n\nCompletato\nVisualizzazione spaziale della concentrazione di laterizi;\n\n\nNon completato\nVisualizzazione spaziale della concentrazione di reperti ceramici;\n\n\nCompletato\nPrimo tentativo di cronologia con metodi aoristici\n\n\nIn avanzamento\nApplicazione ICAR su dataset pulito\n\n\nNon completato\nDivisione funzionale delle categorie di reperti e applicazione smoothed KDE;\n\n\nIn avanzamento\nCreazione di una funzione per generare mappe di classi di materiali.\n\n\nNon completato\n…"
+    "text": "Pagina ‘Villa Mascherone’\n\nTabella riepilogativa dei task da completare nella pagina mascherone.qmd\n\n\n\n\n\n\nStato\nDescrizione\n\n\n\n\nCompletato\nRenderizzazione della pianta della villa e del campo in bianco e nero semplice;\n\n\nCompletato\nVisualizzazione spaziale della concentrazione di laterizi;\n\n\nCompletato\nVisualizzazione spaziale della concentrazione di reperti ceramici;\n\n\nCompletato\nPrimo tentativo di cronologia con metodi aoristici\n\n\nIn avanzamento\nApplicazione ICAR su dataset pulito\n\n\nCompletato\nCreazione di una funzione per generare mappe di classi di materiali.\n\n\nNon completato\n…"
   },
   {
     "objectID": "progress.html",
@@ -179,7 +179,7 @@
     "href": "progress.html#pagina-avanzamento-del-progetto",
     "title": "Avanzamento",
     "section": "Pagina ‘Avanzamento del progetto’",
-    "text": "Pagina ‘Avanzamento del progetto’\n\nTabella riepilogativa dei task da completare nella pagina progress.qmd\n\n\n\n\n\n\nStato\nDescrizione\n\n\n\n\nNon completato\nDashboard interattiva per la consultazione in forma tabulare (e lo scaricamento) dei dati sui campi e sulle UT.\n\n\nNon completato\nAggiungere una progress bar riepilogativa in cima alla dashboard o a questa pagina.\n\n\nNon completato\nAggiungere una progress bar con l’area dei campi attualmente attraversati e schedati.\n\n\nNon completato\nAggiungere una progress bar con quanto manca a raggiungere il target prefissato per l’intero progetto.\n\n\nNon completato\nAggiungere una progress bar con il numero di UT schedate."
+    "text": "Pagina ‘Avanzamento del progetto’\n\nTabella riepilogativa dei task da completare nella pagina progress.qmd\n\n\n\n\n\n\nStato\nDescrizione\n\n\n\n\nNon completato\nDashboard interattiva per la consultazione in forma tabulare (e lo scaricamento) dei dati sui campi e sulle UT.\n\n\nCompletato\nAggiungere una progress bar riepilogativa in cima alla dashboard o a questa pagina.\n\n\nCompletato\nAggiungere una progress bar con l’area dei campi attualmente attraversati e schedati.\n\n\nCompletato\nAggiungere una progress bar con quanto manca a raggiungere il target prefissato per l’intero progetto.\n\n\nCompletato\nAggiungere una progress bar con il numero di UT schedate."
   },
   {
     "objectID": "progress.html#generale",
@@ -284,7 +284,7 @@
     "href": "ut.html",
     "title": "Schede di unità topografiche (UT)",
     "section": "",
-    "text": "Per la corretta visualizzazione della tabella si consiglia l’utilizzo di un computer o tablet. Al momento, la visione non è ottimizzata per dispositivi mobili con schermi di dimensioni ridotte. Se si utilizza un cellulare, muoversi con le dita per visualizzare le informazioni sulla destra (es. mappa).\n\n\n\nOgni unità topografica (UT), dispone di una scheda informativa dettagliata. Utilizza l’ordinamento per colonna per trovare rapidamente il campo desiderato. Clicca sul numero per accedere alla scheda corrispondente.\n\n\n\n Torna in cima"
+    "text": "Per la corretta visualizzazione della tabella si consiglia l’utilizzo di un computer o tablet. Al momento, la visione non è ottimizzata per dispositivi mobili con schermi di dimensioni ridotte. Se si utilizza un cellulare, muoversi con le dita per visualizzare le informazioni sulla destra (es. mappa).\n\n\n\nOgni unità topografica (UT), dispone di una scheda informativa dettagliata. Utilizza l’ordinamento per colonna per trovare rapidamente il campo desiderato. Clicca sul numero per accedere alla scheda corrispondente.\n\n\n\n\n\n\n\n\n\n\n\n\n\n Torna in cima"
   },
   {
     "objectID": "Tests_for_CAA/pottery_distribution.html",
