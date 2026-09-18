@@ -2,6 +2,34 @@
 (function () {
   "use strict";
 
+  // ── Real visible height ────────────────────────────────────────────────
+  // dvh/svh assume the host browser tells WebKit how much space its own
+  // chrome takes, and resizes the viewport accordingly. Safari does that.
+  // Chrome-for-iOS (WKWebView under Apple's rules, but Google draws its own
+  // toolbar outside it) often doesn't: dvh then reports the same number as
+  // plain vh, and Chrome's floating bottom bar simply overlays on top of
+  // whatever the page painted there, covering the last ~60px of the hero
+  // regardless of which CSS viewport unit was used.
+  //
+  // visualViewport tracks the ACTUALLY visible rectangle at the WebKit
+  // level, which every WKWebView-based browser keeps accurate (it is also
+  // what the on-screen keyboard resizes), so it isn't subject to the same
+  // per-browser-shell inconsistency. Kept as a CSS custom property rather
+  // than only a one-time read, updated on resize/scroll of the visual
+  // viewport, since the visible height also changes as chrome shows or
+  // hides while scrolling.
+  function setViewportHeight() {
+    var h = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+    document.documentElement.style.setProperty("--vvh", h + "px");
+  }
+  setViewportHeight();
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener("resize", setViewportHeight);
+  } else {
+    window.addEventListener("resize", setViewportHeight);
+  }
+  window.addEventListener("orientationchange", setViewportHeight);
+
   // Hide the "back to top" button once the footer scrolls into view: you
   // don't need to jump to the top when you're already looking at the bottom
   // of the page, and the button (fixed, bottom-right) otherwise sits on top
