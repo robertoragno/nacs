@@ -233,10 +233,26 @@
 
   // ── Layers ──────────────────────────────────────────────────────────────
   var _added = false;
+  // The initial center/zoom above was tuned by eye against a wide desktop
+  // container, so it only frames the UTs correctly at that aspect ratio: on
+  // a phone, where the map is closer to square, the same point no longer
+  // centers the actual data extent (nacs-map.js avoids this by fitting
+  // bounds after load; this map never did). Fit once, from the grid's own
+  // cell centres, so it adapts to whatever shape the container has.
+  var _fitted = false;
+  function fitToData() {
+    if (_fitted) return;
+    _fitted = true;
+    var b = new maplibregl.LngLatBounds();
+    for (var i = 0; i < DATA.lon.length; i++) b.extend([DATA.lon[i], DATA.lat[i]]);
+    if (!b.isEmpty()) map.fitBounds(b, { padding: 40, duration: 0 });
+  }
+
   function addLayers() {
     if (!map.getSource("density")) {
       map.addSource("density", { type: "geojson", data: gridFeatureCollection(), promoteId: "i" });
     }
+    fitToData();
     if (!map.getLayer("density-fill")) {
       map.addLayer({
         id: "density-fill", source: "density", type: "fill",
