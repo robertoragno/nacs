@@ -192,6 +192,14 @@
   }
 
   function applySelection() {
+    // The panel and legend are plain DOM and must track the selection even
+    // before the map's layers exist. buildControls() deliberately runs
+    // without waiting for the map (same reasoning as nacs-map.js: a reader
+    // on a slow connection should not be left with controls they cannot
+    // use), so a class ticked during that window used to update nothing at
+    // all, the checkbox going on while the panel still read "select a
+    // class". addLayers() re-runs this once the source exists.
+    updatePanel();
     if (!map.getSource("density")) return;
     ensureConfidenceState();
     var vals = combinedValues();
