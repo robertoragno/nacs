@@ -59,9 +59,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
-
 
 </head>
 
@@ -185,12 +182,6 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Data di Pubblicazione</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">18 settembre 2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -199,319 +190,305 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>La cronologia del sito, ricostruita dalle tipologie ceramiche raccolte in superficie, mostra una presenza continua dalla preistoria all’età moderna con un’intensificazione principale in età imperiale romana e tardoantica, e presenze significative anche in età bassomedievale e moderna.</p>
-<div class="cell" data-hash="chronology_cache/html/fig-nhpp-hsgp-General-NACS-Reduced_3754f0a39004eb7d0db6874daf286e5d">
+<div class="cell" data-hash="chronology_cache/html/fig-nhpp-hsgp-General-NACS-Reduced_a4c1ea783ebb1d233ae2a5f83af06908">
 <div class="cell-output-display">
 <div id="fig-nhpp-hsgp-General-NACS-Reduced" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="chronology_files/figure-html/fig-nhpp-hsgp-General-NACS-Reduced-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="chronology_files/figure-html/fig-nhpp-hsgp-General-NACS-Reduced-1.png" class="img-fluid figure-img" alt="Curva dell'intensità relativa dei materiali datati fra il 6000 a.C. e il 1950 d.C. La curva resta sotto la media fino all'età arcaica, sale nettamente in età ellenistica e raggiunge il massimo in età romana imperiale e tardoantica, fra il I e il VI secolo d.C., dove le fasce di credibilità sono più strette. Segue un calo altomedievale e una ripresa moderata in età bassomedievale e moderna. Il tratto anteriore al 600 a.C. è sbiadito perché non risolto." width="672"></p>
 <figcaption class="figure-caption">Figura&nbsp;1: Intensità relativa stimata dei materiali datati (1.0 = attività uniforme sull’intero periodo). Linea: mediana a posteriori; fasce: intervalli di credibilità al 50%, 80% e 95%. Bande grigie/bianche: periodi di riferimento. Il tratto prima del 600 a.C. è sbiadito intenzionalmente: in quel periodo il 64% delle datazioni condivide un’unica finestra cronologica indifferenziata (6000-600 a.C.), quindi la forma esatta della curva è rumore statistico, non un segnale affidabile, fino a datazioni più specifiche su quei materiali. Al momento, il sito di Mascherone è escluso perché le analisi sul campo hanno adottato una metodologia differente.</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="Note metodologiche">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note metodologiche
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
+<div class="sheet sheet-collapsible">
+<details>
+<summary><span class="sheet-title">Note metodologiche</span></summary>
 <p>La datazione derivante dalle tipocronologie ceramiche è tipicamente espressa in forma di intervalli di tempo, riflettendo l’incertezza intrinseca nella classificazione cronologica. Ogni frammento ceramico è quindi associato a un intervallo specifico, che può essere più o meno ampio a seconda della precisione della tipocronologia o di eventuali contesti stratigrafici. Il modello utilizzato (un processo di Poisson non omogeneo con intensità log-Gaussiana, approssimata tramite basi di Hilbert) usa questi intervalli senza forzare una data specifica: distribuisce la presenza di ciascun reperto lungo tutto il suo intervallo di datazione, e stima una densità continua nel tempo che “prende in prestito” informazioni dai periodi adiacenti, producendo una ricostruzione più coerente di quella che si otterrebbe da un semplice conteggio per fasce cronologiche.</p>
 <p>È fondamentale distinguere tra frequenze e probabilità di occupazione o esistenza. Questo grafico non rappresenta la reale cronologia di occupazione del sito, ma mostra quanti reperti, in base alle loro date assegnate, potrebbero esistere in un dato periodo. Un picco non indica necessariamente un’intensificazione dell’occupazione: potrebbe riflettere anche la maggiore durata o riconoscibilità delle tipologie ceramiche associate a quel periodo.</p>
 <p>Le finestre di datazione più larghe di 1000 anni (in particolare ceramica ad impasto e selce lavorata, insieme il 64% del dataset in un’unica finestra di 5400 anni, 6000-600 a.C.) sono suddivise in sotto-finestre di 200 anni con conteggio proporzionale prima di stimare il modello. Senza questa correzione, il modello concentrava questa massa non ancora risolta ovunque vi fosse una minima evidenza puntuale nelle vicinanze, producendo un picco artificiale in preistoria privo di supporto nelle datazioni specifiche. La correzione non esclude né altera i dati: distribuisce ciascun reperto uniformemente sul proprio intervallo, la stessa assunzione su cui si basa il metodo aoristico stesso, resa esplicita nei dati che il modello riceve.</p>
 <p>Anche dopo questa correzione, la curva prima del 600 a.C. mostra piccole ondulazioni che non corrispondono a nessuna evidenza specifica: sono l’incertezza propria del modello in un tratto dove l’unica informazione disponibile è una massa ampia e indifferenziata. Per questo motivo quel tratto è mostrato sbiadito nel grafico. Non è un difetto da correggere ulteriormente: allargare la scala di lunghezza del modello o ridurre il peso di questi materiali sono stati entrambi verificati, e il secondo tentativo peggiora le cose, poiché è proprio quella massa a mantenere la curva stabile in un tratto altrimenti privo di vincoli. Datazioni più precise su questi materiali, quando disponibili, permetteranno di affinare questa parte della cronologia e di rimuovere la sfumatura.</p>
 <p>Per ottenere una vera ricostruzione della cronologia di occupazione, sarebbe necessario integrare questi risultati con altri tipi di dati, come scavi (e quindi stratigrafie), datazioni assolute o indicatori funzionali della presenza umana.</p>
-</div>
-</div>
+</details>
 </div>
 <section id="informazioni-supplementari" class="level2">
 <h2 class="anchored" data-anchor-id="informazioni-supplementari">Informazioni supplementari</h2>
 <section id="macroclassi-cronotipologiche" class="level3">
 <h3 class="anchored" data-anchor-id="macroclassi-cronotipologiche">Macroclassi cronotipologiche</h3>
-<div class="cell" data-hash="chronology_cache/html/tbl-datazione-macrocatgorie_58891779476414d3954293857b3a33fc">
+<div class="cell" data-hash="chronology_cache/html/tbl-datazione-macrocatgorie_1f9ea0fea2957cf679fffed15aac391d">
 <div class="cell-output-display">
 <div id="tbl-datazione-macrocatgorie" class="anchored">
-<table class="lightable-minimal table table-sm table-striped small" data-quarto-postprocess="true">
+<table class="nacs-table table table-sm table-striped small" data-quarto-postprocess="true">
 <caption>Tabella&nbsp;1: Datazione proposta per le macroclassi di materiali archeologici rinvenuti durante le indagini di ricognizione di superficie. I valori sono in anni per necessità computazionali, e sono espressi in negativo per le datazioni a.C. e in positivo per le datazioni d.C.</caption>
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th" style="text-align: left; empty-cells: hide; border-bottom: hidden;"></th>
-<th colspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-bottom: hidden; padding-bottom: 0; padding-left: 3px; padding-right: 3px;"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
-Cronologia
-</div></th>
+<th class="is-blank" data-quarto-table-cell-role="th" scope="col">&nbsp;</th>
+<th colspan="2" data-quarto-table-cell-role="th" scope="colgroup">Cronologia</th>
 </tr>
 <tr class="odd">
-<th style="text-align: left;" data-quarto-table-cell-role="th">Materiale</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">Datazione_da</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">Datazione_a</th>
+<th data-quarto-table-cell-role="th" scope="col">Materiale</th>
+<th data-quarto-table-cell-role="th" scope="col">Datazione_da</th>
+<th data-quarto-table-cell-role="th" scope="col">Datazione_a</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">laterizi</td>
-<td style="text-align: right;">-399</td>
-<td style="text-align: right;">1599</td>
+<td>laterizi</td>
+<td class="num">-399</td>
+<td class="num">1599</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">tegole_piane_romane</td>
-<td style="text-align: right;">-300</td>
-<td style="text-align: right;">699</td>
+<td>tegole_piane_romane</td>
+<td class="num">-300</td>
+<td class="num">699</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">tegola_pettinata</td>
-<td style="text-align: right;">300</td>
-<td style="text-align: right;">699</td>
+<td>tegola_pettinata</td>
+<td class="num">300</td>
+<td class="num">699</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">macine</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: right;">NA</td>
+<td>macine</td>
+<td class="num"><span class="absent">n.d.</span></td>
+<td class="num"><span class="absent">n.d.</span></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">scorie_metalliche</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: right;">NA</td>
+<td>scorie_metalliche</td>
+<td class="num"><span class="absent">n.d.</span></td>
+<td class="num"><span class="absent">n.d.</span></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ceramica_acroma</td>
-<td style="text-align: right;">-399</td>
-<td style="text-align: right;">1799</td>
+<td>ceramica_acroma</td>
+<td class="num">-399</td>
+<td class="num">1799</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ceramica_acroma_medievale</td>
-<td style="text-align: right;">1200</td>
-<td style="text-align: right;">1599</td>
+<td>ceramica_acroma_medievale</td>
+<td class="num">1200</td>
+<td class="num">1599</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ceramica_protomaiolica</td>
-<td style="text-align: right;">1200</td>
-<td style="text-align: right;">1350</td>
+<td>ceramica_protomaiolica</td>
+<td class="num">1200</td>
+<td class="num">1350</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ceramica_dipinta</td>
-<td style="text-align: right;">-399</td>
-<td style="text-align: right;">1399</td>
+<td>ceramica_dipinta</td>
+<td class="num">-399</td>
+<td class="num">1399</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ceramica_RMR</td>
-<td style="text-align: right;">1200</td>
-<td style="text-align: right;">1350</td>
+<td>ceramica_RMR</td>
+<td class="num">1200</td>
+<td class="num">1350</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ceramica_vernice_rossa_interna</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">199</td>
+<td>ceramica_vernice_rossa_interna</td>
+<td class="num">1</td>
+<td class="num">199</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ceramica_smaltata</td>
-<td style="text-align: right;">1400</td>
-<td style="text-align: right;">1899</td>
+<td>ceramica_smaltata</td>
+<td class="num">1400</td>
+<td class="num">1899</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ceramica_invetriata</td>
-<td style="text-align: right;">1200</td>
-<td style="text-align: right;">1899</td>
+<td>ceramica_invetriata</td>
+<td class="num">1200</td>
+<td class="num">1899</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ceramica_invetriata_verde</td>
-<td style="text-align: right;">1201</td>
-<td style="text-align: right;">1399</td>
+<td>ceramica_invetriata_verde</td>
+<td class="num">1201</td>
+<td class="num">1399</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ceramica_doppio_bagno</td>
-<td style="text-align: right;">1400</td>
-<td style="text-align: right;">1500</td>
+<td>ceramica_doppio_bagno</td>
+<td class="num">1400</td>
+<td class="num">1500</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ceramica_vetrina_pesante</td>
-<td style="text-align: right;">1000</td>
-<td style="text-align: right;">1099</td>
+<td>ceramica_vetrina_pesante</td>
+<td class="num">1000</td>
+<td class="num">1099</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ceramica_invetriata_graffita</td>
-<td style="text-align: right;">1500</td>
-<td style="text-align: right;">1899</td>
+<td>ceramica_invetriata_graffita</td>
+<td class="num">1500</td>
+<td class="num">1899</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ceramica_graffita_bizantina</td>
-<td style="text-align: right;">1100</td>
-<td style="text-align: right;">1299</td>
+<td>ceramica_graffita_bizantina</td>
+<td class="num">1100</td>
+<td class="num">1299</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ceramica_maiolica</td>
-<td style="text-align: right;">1400</td>
-<td style="text-align: right;">1899</td>
+<td>ceramica_maiolica</td>
+<td class="num">1400</td>
+<td class="num">1899</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ceramica_invetriata_eta_moderna</td>
-<td style="text-align: right;">1400</td>
-<td style="text-align: right;">1899</td>
+<td>ceramica_invetriata_eta_moderna</td>
+<td class="num">1400</td>
+<td class="num">1899</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">pareti_sottili</td>
-<td style="text-align: right;">-25</td>
-<td style="text-align: right;">150</td>
+<td>pareti_sottili</td>
+<td class="num">-25</td>
+<td class="num">150</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ceramica_TSI</td>
-<td style="text-align: right;">-25</td>
-<td style="text-align: right;">99</td>
+<td>ceramica_TSI</td>
+<td class="num">-25</td>
+<td class="num">99</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ceramica_TSA</td>
-<td style="text-align: right;">101</td>
-<td style="text-align: right;">650</td>
+<td>ceramica_TSA</td>
+<td class="num">101</td>
+<td class="num">650</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ceramica_TSA_A</td>
-<td style="text-align: right;">175</td>
-<td style="text-align: right;">299</td>
+<td>ceramica_TSA_A</td>
+<td class="num">175</td>
+<td class="num">299</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ceramica_TSA_C</td>
-<td style="text-align: right;">175</td>
-<td style="text-align: right;">499</td>
+<td>ceramica_TSA_C</td>
+<td class="num">175</td>
+<td class="num">499</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ceramica_TSA_D</td>
-<td style="text-align: right;">300</td>
-<td style="text-align: right;">625</td>
+<td>ceramica_TSA_D</td>
+<td class="num">300</td>
+<td class="num">625</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ceramica_eastern_sigillata</td>
-<td style="text-align: right;">-25</td>
-<td style="text-align: right;">299</td>
+<td>ceramica_eastern_sigillata</td>
+<td class="num">-25</td>
+<td class="num">299</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ceramica_CAC</td>
-<td style="text-align: right;">175</td>
-<td style="text-align: right;">325</td>
+<td>ceramica_CAC</td>
+<td class="num">175</td>
+<td class="num">325</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ceramica_PRSW</td>
-<td style="text-align: right;">400</td>
-<td style="text-align: right;">599</td>
+<td>ceramica_PRSW</td>
+<td class="num">400</td>
+<td class="num">599</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ceramica_fuoco</td>
-<td style="text-align: right;">-399</td>
-<td style="text-align: right;">1799</td>
+<td>ceramica_fuoco</td>
+<td class="num">-399</td>
+<td class="num">1799</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ceramica_ICW</td>
-<td style="text-align: right;">201</td>
-<td style="text-align: right;">350</td>
+<td>ceramica_ICW</td>
+<td class="num">201</td>
+<td class="num">350</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ceramica_fuoco_invetriata</td>
-<td style="text-align: right;">1300</td>
-<td style="text-align: right;">1899</td>
+<td>ceramica_fuoco_invetriata</td>
+<td class="num">1300</td>
+<td class="num">1899</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ceramica_lucerna</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">599</td>
+<td>ceramica_lucerna</td>
+<td class="num">1</td>
+<td class="num">599</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ceramica_dolia_GC</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: right;">NA</td>
+<td>ceramica_dolia_GC</td>
+<td class="num"><span class="absent">n.d.</span></td>
+<td class="num"><span class="absent">n.d.</span></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ceramica_impasto</td>
-<td style="text-align: right;">-6000</td>
-<td style="text-align: right;">-600</td>
+<td>ceramica_impasto</td>
+<td class="num">-6000</td>
+<td class="num">-600</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ceramica_vernice_nera</td>
-<td style="text-align: right;">-499</td>
-<td style="text-align: right;">-100</td>
+<td>ceramica_vernice_nera</td>
+<td class="num">-499</td>
+<td class="num">-100</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ceramica_amphoras</td>
-<td style="text-align: right;">-201</td>
-<td style="text-align: right;">599</td>
+<td>ceramica_amphoras</td>
+<td class="num">-201</td>
+<td class="num">599</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ceramica_amphoras_italic</td>
-<td style="text-align: right;">-199</td>
-<td style="text-align: right;">199</td>
+<td>ceramica_amphoras_italic</td>
+<td class="num">-199</td>
+<td class="num">199</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ceramica_amphoras_african</td>
-<td style="text-align: right;">200</td>
-<td style="text-align: right;">599</td>
+<td>ceramica_amphoras_african</td>
+<td class="num">200</td>
+<td class="num">599</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ceramica_amphoras_eastern</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">550</td>
+<td>ceramica_amphoras_eastern</td>
+<td class="num">1</td>
+<td class="num">550</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ceramica_geometrica</td>
-<td style="text-align: right;">-800</td>
-<td style="text-align: right;">-300</td>
+<td>ceramica_geometrica</td>
+<td class="num">-800</td>
+<td class="num">-300</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ceramica_pasta_grigia</td>
-<td style="text-align: right;">-199</td>
-<td style="text-align: right;">-1</td>
+<td>ceramica_pasta_grigia</td>
+<td class="num">-199</td>
+<td class="num">-1</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ceramica_non_identificata</td>
-<td style="text-align: right;">-399</td>
-<td style="text-align: right;">1799</td>
+<td>ceramica_non_identificata</td>
+<td class="num">-399</td>
+<td class="num">1799</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">pesi_telaio</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: right;">NA</td>
+<td>pesi_telaio</td>
+<td class="num"><span class="absent">n.d.</span></td>
+<td class="num"><span class="absent">n.d.</span></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">pesi_pesca</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: right;">NA</td>
+<td>pesi_pesca</td>
+<td class="num"><span class="absent">n.d.</span></td>
+<td class="num"><span class="absent">n.d.</span></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">intonaco</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: right;">NA</td>
+<td>intonaco</td>
+<td class="num"><span class="absent">n.d.</span></td>
+<td class="num"><span class="absent">n.d.</span></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">vetro</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: right;">NA</td>
+<td>vetro</td>
+<td class="num"><span class="absent">n.d.</span></td>
+<td class="num"><span class="absent">n.d.</span></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">selce_lavorata</td>
-<td style="text-align: right;">-6000</td>
-<td style="text-align: right;">-600</td>
+<td>selce_lavorata</td>
+<td class="num">-6000</td>
+<td class="num">-600</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">pipa_fittile</td>
-<td style="text-align: right;">NA</td>
-<td style="text-align: right;">NA</td>
+<td>pipa_fittile</td>
+<td class="num"><span class="absent">n.d.</span></td>
+<td class="num"><span class="absent">n.d.</span></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ceramica_bari_type</td>
-<td style="text-align: right;">1401</td>
-<td style="text-align: right;">1600</td>
+<td>ceramica_bari_type</td>
+<td class="num">1401</td>
+<td class="num">1600</td>
 </tr>
 </tbody>
 </table>
 </div>
-
-
+</div>
+</div>
+<div class="provenance">
+<div class="cell" data-hash="chronology_cache/html/unnamed-chunk-4_c9cfceaf6960580d078929a6865de14d">
+<p>Modello NHPP-HSGP calcolato il 18 settembre 2026. Dati di campagna aggiornati al 18 settembre 2026.</p>
 </div>
 </div>
 
