@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Northern Apulia Coastal Landscape - Cronologia</title>
+<title>Northern Apulia Coastal Survey - Cronologia</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,6 +25,10 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -35,6 +39,12 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
   "language": {
     "search-no-results-text": "Nessun risultato",
     "search-matching-documents-text": "documenti trovati",
@@ -53,7 +63,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -64,33 +73,60 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logo.png" alt="" class="navbar-logo">
+    <img src="./images/logo.PNG" alt="Northern Apulia Coastal Survey" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Northern Apulia Coastal Landscape</span>
+    <span class="navbar-title">Northern Apulia Coastal Survey</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Ricerca"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Attiva/disattiva la navigazione" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
-  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-schede" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Schede</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-il-progetto" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Il progetto</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-schede">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-il-progetto">    
+        <li>
+    <a class="dropdown-item" href="./index.html" rel="" target="">
+ <span class="dropdown-text">Il survey</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./progress.html" rel="" target="">
+ <span class="dropdown-text">Avanzamento</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-il-territorio" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Il territorio</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-il-territorio">    
         <li>
     <a class="dropdown-item" href="./fields.html" rel="" target="">
- <span class="dropdown-text">Schede di campi (UR)</span></a>
+ <span class="dropdown-text">Campi (UR)</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./ut.html" rel="" target="">
- <span class="dropdown-text">Schede di unità topografiche (UT)</span></a>
+ <span class="dropdown-text">Unità topografiche (UT)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-i-siti" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">I siti</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-i-siti">    
+        <li>
+    <a class="dropdown-item" href="./mascherone.html" rel="" target="">
+ <span class="dropdown-text">Villa Mascherone</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./siti.html" rel="" target="">
+ <span class="dropdown-text">I siti</span></a>
   </li>  
     </ul>
   </li>
@@ -104,15 +140,11 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Cronologia</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./mascherone.html" rel="" target="">
- <span class="dropdown-text">Villa Mascherone</span></a>
+    <a class="dropdown-item" href="./spatial_analysis_functional.html" rel="" target="">
+ <span class="dropdown-text">Analisi spaziali</span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./progress.html" rel="" target="">
- <span class="menu-text">Avanzamento</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./bibliography.html" rel="" target="">
  <span class="menu-text">Bibliografia</span></a>
@@ -156,7 +188,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Data di Pubblicazione</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">21 marzo 2025</p>
+      <p class="date">18 settembre 2026</p>
     </div>
   </div>
   
@@ -166,46 +198,34 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="cell">
-<style type="text/css">
-p {
-  text-align: justify
-}
-
-</style>
-</div>
-<p>La datazione derivante dalle tipocronologie ceramiche è tipicamente espressa in forma di intervalli di tempo, riflettendo l’incertezza intrinseca nella classificazione cronologica. Ogni frammento ceramico è quindi associato a un intervallo specifico, che può essere più o meno ampio a seconda della precisione della tipocronologia o di eventuali contesti stratigrafici. L’approccio aoristico utilizza questi intervalli senza forzare una data specifica: invece di scegliere un punto centrale arbitrario, distribuisce uniformemente la presenza di ciascun reperto lungo tutto il suo intervallo di datazione. Questo metodo consente di analizzare materiali con datazioni diverse in maniera coerente, evidenziando quali periodi sono più frequentemente coperti dagli intervalli di datazione.</p>
-<p>È fondamentale distinguere tra frequenze e probabilità di occupazione o esistenza. La somma aoristica non rappresenta la reale cronologia di occupazione di un sito, ma mostra semplicemente quanti reperti, in base alle loro date assegnate, potrebbero esistere in un dato periodo, senza fornire una misura diretta dell’intensità o continuità dell’occupazione. In altre parole, non è una stima della probabilità che il sito fosse effettivamente occupato in un dato momento, ma solo un conteggio ponderato dei possibili intervalli di esistenza dei reperti. Questo significa che un picco nella somma aoristica non indica necessariamente un’intensificazione dell’occupazione, ma potrebbe riflettere solo la maggiore durata delle tipologie ceramiche associate a quel periodo o una migliore documentazione archeologica.</p>
-<p>Per superare alcune di queste limitazioni, abbiamo utilizzato i modelli ICAR (Intrinsically Conditional Autoregressive), che incorporano il concetto di autocorrelazione temporale. Analogamente all’autocorrelazione spaziale espressa dalla prima legge della geografia di Waldo Tobler (“Ogni cosa è legata a ogni altra, ma le cose vicine sono più legate di quelle lontane”), i modelli ICAR assumono che periodi vicini nel tempo siano probabilmente simili in termini di occupazione. Così come per la somma aoristica, anche l’ICAR non produce una cronologia diretta di occupazione, ma un modello statistico che regolarizza le frequenze aoristiche, riducendo la frammentazione artificiale dei dati e producendo una stima più continua della distribuzione dei reperti nel tempo.</p>
-<p>Il grafico ICAR riportato di seguito incorpora questo principio di continuità temporale. La stima media a posteriori (posterior mean), rappresentata dai punti neri, è la media delle distribuzioni posteriori per ciascun intervallo temporale, calcolata integrando i dati osservati con le assunzioni del modello. Le fasce colorate (50% HPDI in blu scuro e 90% HPDI in blu chiaro) rappresentano gli intervalli di credibilità, fornendo una misura dell’incertezza associata a ciascuna stima. Questo approccio non solo smussa le fluttuazioni casuali nei dati, ma fornisce stime più robuste, soprattutto nei periodi in cui le osservazioni sono scarse. Quando i dati sono limitati, il modello ICAR “prende in prestito” informazioni dai periodi adiacenti, producendo una ricostruzione cronologica più coerente e interpretabile.</p>
-<p>Rispetto alla somma aoristica, i modelli ICAR offrono due vantaggi principali: permettono di evidenziare processi continui e riducono l’impatto di anomalie o lacune nei dati. Grazie alla modellazione bayesiana, l’inclusione dell’incertezza fornisce non solo le tendenze principali, ma anche una misura chiara dell’affidabilità delle stime.</p>
-<p>Entrambi i metodi operano sui dati a disposizione, che sono una rappresentazione indiretta dell’occupazione basata sulla tipocronologia ceramica. Per ottenere una vera ricostruzione della cronologia di occupazione, sarebbe necessario integrare questi risultati con altri tipi di dati, come scavi (e quindi stratigrafie), datazioni assolute o indicatori funzionali della presenza umana.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Aoristic</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">ICAR</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div class="cell">
+<p>La cronologia del sito, ricostruita dalle tipologie ceramiche raccolte in superficie, mostra una presenza continua dalla preistoria all’età moderna con un’intensificazione principale in età imperiale romana e tardoantica, e presenze significative anche in età bassomedievale e moderna.</p>
+<div class="cell" data-hash="chronology_cache/html/fig-nhpp-hsgp-General-NACS-Reduced_3754f0a39004eb7d0db6874daf286e5d">
 <div class="cell-output-display">
-<div id="fig-aoristic-General-NACS-Reduced" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-nhpp-hsgp-General-NACS-Reduced" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="chronology_files/figure-html/fig-aoristic-General-NACS-Reduced-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figura&nbsp;1: Somma aoristica dei materiali rinvenuti durante le ricognizioni del 2024, datati in base a macroclassi cronotipologiche. Inquadramento cronologico dei materiali archeologici dal dataset pulito da rumore di fondo (ceramica acroma, ceramica da fuoco, laterizi, ceramica non identificata). Al momento, il sito di Mascherone è escluso perché le analisi sul campo hanno adottato una metodologia differente.</figcaption>
+<p><img src="chronology_files/figure-html/fig-nhpp-hsgp-General-NACS-Reduced-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figura&nbsp;1: Intensità relativa stimata dei materiali datati (1.0 = attività uniforme sull’intero periodo). Linea: mediana a posteriori; fasce: intervalli di credibilità al 50%, 80% e 95%. Bande grigie/bianche: periodi di riferimento. Il tratto prima del 600 a.C. è sbiadito intenzionalmente: in quel periodo il 64% delle datazioni condivide un’unica finestra cronologica indifferenziata (6000-600 a.C.), quindi la forma esatta della curva è rumore statistico, non un segnale affidabile, fino a datazioni più specifiche su quei materiali. Al momento, il sito di Mascherone è escluso perché le analisi sul campo hanno adottato una metodologia differente.</figcaption>
 </figure>
 </div>
 </div>
 </div>
+<div class="callout callout-style-default callout-note callout-titled" title="Note metodologiche">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-ICAR-General-NACS-Reduced" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="chronology_files/figure-html/fig-ICAR-General-NACS-Reduced-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figura&nbsp;2: Modello ICAR sul dataset pulito dal rumore di fondo (ceramica acroma, ceramica da fuoco, laterizi, ceramica non identificata) con parametri [niter=2000000, nburnin=25000, thin=50, nchains=4, sigmaPrior=dexp(rate=100)], ristretta al range 5000 a.C. - 1900 d.C. Al momento, il sito di Mascherone è escluso perché le analisi sul campo hanno adottato una metodologia differente.</figcaption>
-</figure>
+<div class="callout-title-container flex-fill">
+Note metodologiche
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>La datazione derivante dalle tipocronologie ceramiche è tipicamente espressa in forma di intervalli di tempo, riflettendo l’incertezza intrinseca nella classificazione cronologica. Ogni frammento ceramico è quindi associato a un intervallo specifico, che può essere più o meno ampio a seconda della precisione della tipocronologia o di eventuali contesti stratigrafici. Il modello utilizzato (un processo di Poisson non omogeneo con intensità log-Gaussiana, approssimata tramite basi di Hilbert) usa questi intervalli senza forzare una data specifica: distribuisce la presenza di ciascun reperto lungo tutto il suo intervallo di datazione, e stima una densità continua nel tempo che “prende in prestito” informazioni dai periodi adiacenti, producendo una ricostruzione più coerente di quella che si otterrebbe da un semplice conteggio per fasce cronologiche.</p>
+<p>È fondamentale distinguere tra frequenze e probabilità di occupazione o esistenza. Questo grafico non rappresenta la reale cronologia di occupazione del sito, ma mostra quanti reperti, in base alle loro date assegnate, potrebbero esistere in un dato periodo. Un picco non indica necessariamente un’intensificazione dell’occupazione: potrebbe riflettere anche la maggiore durata o riconoscibilità delle tipologie ceramiche associate a quel periodo.</p>
+<p>Le finestre di datazione più larghe di 1000 anni (in particolare ceramica ad impasto e selce lavorata, insieme il 64% del dataset in un’unica finestra di 5400 anni, 6000-600 a.C.) sono suddivise in sotto-finestre di 200 anni con conteggio proporzionale prima di stimare il modello. Senza questa correzione, il modello concentrava questa massa non ancora risolta ovunque vi fosse una minima evidenza puntuale nelle vicinanze, producendo un picco artificiale in preistoria privo di supporto nelle datazioni specifiche. La correzione non esclude né altera i dati: distribuisce ciascun reperto uniformemente sul proprio intervallo, la stessa assunzione su cui si basa il metodo aoristico stesso, resa esplicita nei dati che il modello riceve.</p>
+<p>Anche dopo questa correzione, la curva prima del 600 a.C. mostra piccole ondulazioni che non corrispondono a nessuna evidenza specifica: sono l’incertezza propria del modello in un tratto dove l’unica informazione disponibile è una massa ampia e indifferenziata. Per questo motivo quel tratto è mostrato sbiadito nel grafico. Non è un difetto da correggere ulteriormente: allargare la scala di lunghezza del modello o ridurre il peso di questi materiali sono stati entrambi verificati, e il secondo tentativo peggiora le cose, poiché è proprio quella massa a mantenere la curva stabile in un tratto altrimenti privo di vincoli. Datazioni più precise su questi materiali, quando disponibili, permetteranno di affinare questa parte della cronologia e di rimuovere la sfumatura.</p>
+<p>Per ottenere una vera ricostruzione della cronologia di occupazione, sarebbe necessario integrare questi risultati con altri tipi di dati, come scavi (e quindi stratigrafie), datazioni assolute o indicatori funzionali della presenza umana.</p>
 </div>
 </div>
 </div>
@@ -213,7 +233,7 @@ p {
 <h2 class="anchored" data-anchor-id="informazioni-supplementari">Informazioni supplementari</h2>
 <section id="macroclassi-cronotipologiche" class="level3">
 <h3 class="anchored" data-anchor-id="macroclassi-cronotipologiche">Macroclassi cronotipologiche</h3>
-<div class="cell">
+<div class="cell" data-hash="chronology_cache/html/tbl-datazione-macrocatgorie_58891779476414d3954293857b3a33fc">
 <div class="cell-output-display">
 <div id="tbl-datazione-macrocatgorie" class="anchored">
 <table class="lightable-minimal table table-sm table-striped small" data-quarto-postprocess="true">
@@ -482,6 +502,11 @@ Cronologia
 <td style="text-align: right;">NA</td>
 <td style="text-align: right;">NA</td>
 </tr>
+<tr class="even">
+<td style="text-align: left;">ceramica_bari_type</td>
+<td style="text-align: right;">1401</td>
+<td style="text-align: right;">1600</td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -726,9 +751,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("https:\/\/robertoragno\.github\.io\/nacs\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left"><img src="images/logos/uniba.png" class="partner-logo img-fluid" alt="Università degli Studi di Bari Aldo Moro"></div>   
+    <div class="nav-footer-center">Northern Apulia Coastal Survey</div>
+    <div class="nav-footer-right"><img src="images/logos/unifg.png" class="partner-logo img-fluid" alt="Università degli Studi di Foggia"></div>
+  </div>
+</footer>
+<script src="js/site.js"></script>
 
 
 

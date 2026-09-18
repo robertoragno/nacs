@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Northern Apulia Coastal Landscape - Bibliografia</title>
+<title>Northern Apulia Coastal Survey - Bibliografia</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,6 +25,10 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -35,6 +39,12 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
   "language": {
     "search-no-results-text": "Nessun risultato",
     "search-matching-documents-text": "documenti trovati",
@@ -50,7 +60,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -61,33 +70,60 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logo.png" alt="" class="navbar-logo">
+    <img src="./images/logo.PNG" alt="Northern Apulia Coastal Survey" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Northern Apulia Coastal Landscape</span>
+    <span class="navbar-title">Northern Apulia Coastal Survey</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Ricerca"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Attiva/disattiva la navigazione" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
-  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-schede" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Schede</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-il-progetto" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Il progetto</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-schede">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-il-progetto">    
+        <li>
+    <a class="dropdown-item" href="./index.html" rel="" target="">
+ <span class="dropdown-text">Il survey</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./progress.html" rel="" target="">
+ <span class="dropdown-text">Avanzamento</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-il-territorio" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Il territorio</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-il-territorio">    
         <li>
     <a class="dropdown-item" href="./fields.html" rel="" target="">
- <span class="dropdown-text">Schede di campi (UR)</span></a>
+ <span class="dropdown-text">Campi (UR)</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./ut.html" rel="" target="">
- <span class="dropdown-text">Schede di unità topografiche (UT)</span></a>
+ <span class="dropdown-text">Unità topografiche (UT)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-i-siti" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">I siti</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-i-siti">    
+        <li>
+    <a class="dropdown-item" href="./mascherone.html" rel="" target="">
+ <span class="dropdown-text">Villa Mascherone</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./siti.html" rel="" target="">
+ <span class="dropdown-text">I siti</span></a>
   </li>  
     </ul>
   </li>
@@ -101,15 +137,11 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Cronologia</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./mascherone.html" rel="" target="">
- <span class="dropdown-text">Villa Mascherone</span></a>
+    <a class="dropdown-item" href="./spatial_analysis_functional.html" rel="" target="">
+ <span class="dropdown-text">Analisi spaziali</span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./progress.html" rel="" target="">
- <span class="menu-text">Avanzamento</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./bibliography.html" rel="" target="" aria-current="page">
  <span class="menu-text">Bibliografia</span></a>
@@ -130,7 +162,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">In questa pagina</h2>
    
   <ul>
-  <li><a href="#bibliografia-su-siponto" id="toc-bibliografia-su-siponto" class="nav-link active" data-scroll-target="#bibliografia-su-siponto">Bibliografia su Siponto</a></li>
+  <li><a href="#bibliografia-northern-apulia-coastal-survey" id="toc-bibliografia-northern-apulia-coastal-survey" class="nav-link active" data-scroll-target="#bibliografia-northern-apulia-coastal-survey">Bibliografia Northern Apulia Coastal Survey</a></li>
+  <li><a href="#bibliografia-su-siponto" id="toc-bibliografia-su-siponto" class="nav-link" data-scroll-target="#bibliografia-su-siponto">Bibliografia su Siponto</a></li>
   <li><a href="#bibliografia-sulla-costa-pugliese-settentrionale" id="toc-bibliografia-sulla-costa-pugliese-settentrionale" class="nav-link" data-scroll-target="#bibliografia-sulla-costa-pugliese-settentrionale">Bibliografia sulla costa pugliese settentrionale</a></li>
   </ul>
 </nav>
@@ -155,7 +188,11 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>Pagina in costruzione.</p>
 <p>Di seguito sono raccolte alcune referenze bibliografiche che possono risultare utili per l’inquadramento archeologico.</p>
+<section id="bibliografia-northern-apulia-coastal-survey" class="level2">
+<h2 class="anchored" data-anchor-id="bibliografia-northern-apulia-coastal-survey">Bibliografia Northern Apulia Coastal Survey</h2>
+</section>
 <section id="bibliografia-su-siponto" class="level2">
 <h2 class="anchored" data-anchor-id="bibliografia-su-siponto">Bibliografia su Siponto</h2>
 <p>Campione, A., 2004. Lorenzo di Siponto: un vescovo del VI secolo tra agiografia e storia. Vetera christianorum 41, 61–82.</p>
@@ -485,9 +522,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("https:\/\/robertoragno\.github\.io\/nacs\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left"><img src="images/logos/uniba.png" class="partner-logo img-fluid" alt="Università degli Studi di Bari Aldo Moro"></div>   
+    <div class="nav-footer-center">Northern Apulia Coastal Survey</div>
+    <div class="nav-footer-right"><img src="images/logos/unifg.png" class="partner-logo img-fluid" alt="Università degli Studi di Foggia"></div>
+  </div>
+</footer>
+<script src="js/site.js"></script>
 
 
 

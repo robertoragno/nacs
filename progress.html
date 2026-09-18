@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Northern Apulia Coastal Landscape - Avanzamento</title>
+<title>Northern Apulia Coastal Survey - Avanzamento</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,6 +25,10 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -35,6 +39,12 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
   "language": {
     "search-no-results-text": "Nessun risultato",
     "search-matching-documents-text": "documenti trovati",
@@ -48,17 +58,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Ricerca"
   }
 }</script>
-<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
-<script src="site_libs/bslib-component-js-0.8.0.9000/components.min.js"></script>
-<script src="site_libs/bslib-component-js-0.8.0.9000/web-components.min.js" type="module"></script>
-<link href="site_libs/bslib-component-css-0.8.0.9000/components.css" rel="stylesheet">
-<script src="site_libs/bslib-tag-require-0.8.0.9000/tag-require.js"></script>
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -66,33 +70,60 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logo.png" alt="" class="navbar-logo">
+    <img src="./images/logo.PNG" alt="Northern Apulia Coastal Survey" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Northern Apulia Coastal Landscape</span>
+    <span class="navbar-title">Northern Apulia Coastal Survey</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Ricerca"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Attiva/disattiva la navigazione" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
-  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-schede" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Schede</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-il-progetto" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Il progetto</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-schede">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-il-progetto">    
+        <li>
+    <a class="dropdown-item" href="./index.html" rel="" target="">
+ <span class="dropdown-text">Il survey</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./progress.html" rel="" target="">
+ <span class="dropdown-text">Avanzamento</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-il-territorio" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Il territorio</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-il-territorio">    
         <li>
     <a class="dropdown-item" href="./fields.html" rel="" target="">
- <span class="dropdown-text">Schede di campi (UR)</span></a>
+ <span class="dropdown-text">Campi (UR)</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./ut.html" rel="" target="">
- <span class="dropdown-text">Schede di unità topografiche (UT)</span></a>
+ <span class="dropdown-text">Unità topografiche (UT)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-i-siti" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">I siti</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-i-siti">    
+        <li>
+    <a class="dropdown-item" href="./mascherone.html" rel="" target="">
+ <span class="dropdown-text">Villa Mascherone</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./siti.html" rel="" target="">
+ <span class="dropdown-text">I siti</span></a>
   </li>  
     </ul>
   </li>
@@ -106,15 +137,11 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Cronologia</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./mascherone.html" rel="" target="">
- <span class="dropdown-text">Villa Mascherone</span></a>
+    <a class="dropdown-item" href="./spatial_analysis_functional.html" rel="" target="">
+ <span class="dropdown-text">Analisi spaziali</span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link active" href="./progress.html" rel="" target="" aria-current="page">
- <span class="menu-text">Avanzamento</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./bibliography.html" rel="" target="">
  <span class="menu-text">Bibliografia</span></a>
@@ -130,17 +157,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">In questa pagina</h2>
-   
-  <ul>
-  <li><a href="#generale" id="toc-generale" class="nav-link active" data-scroll-target="#generale">Generale</a></li>
-  <li><a href="#pagina-avanzamento-del-progetto" id="toc-pagina-avanzamento-del-progetto" class="nav-link" data-scroll-target="#pagina-avanzamento-del-progetto">Pagina ‘Avanzamento del progetto’</a></li>
-  <li><a href="#pagina-villa-mascherone" id="toc-pagina-villa-mascherone" class="nav-link" data-scroll-target="#pagina-villa-mascherone">Pagina ‘Villa Mascherone’</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -161,262 +178,235 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="cell">
-<style type="text/css">
-p {
-  text-align: justify
-}
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
-.c-pill {
-  align-items: center;
-    font-family: "Open Sans", Arial, Verdana, sans-serif;
-    font-weight: bold;
-    font-size: 11px;
-  display: inline-block;
-  height: 100%;
-  white-space: nowrap;
-  width: auto;
-
-  position: relative;
-  border-radius: 100px;
-  line-height: 1;
-  overflow: hidden;
-  padding: 0px 12px 0px 20px;
-  text-overflow: ellipsis;
-    line-height: 1.25rem;
-    color: #595959;
-    
-    word-break: break-word;
-
-  &:before {
-    border-radius: 50%;
-    content: '';
-    height: 10px;
-    left: 6px;
-    margin-top: -5px;
-    position: absolute;
-    top: 50%;
-    width: 10px;
-  }
-  
- 
-}
-
-
-  .c-pill--success {
-    background: #b4eda0; }
-    .c-pill--success:before {
-      background: #6BC167; }
-  .c-pill--warning {
-    background: #ffebb6; }
-    .c-pill--warning:before {
-      background: #ffc400; }
-  .c-pill--danger {
-    background: #ffd5d1; }
-    .c-pill--danger:before {
-      background: #ff4436; }
-</style>
-</div>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Attenzione
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Pagina in costruzione.</p>
-</div>
-</div>
-<div class="cell">
+<p>Il survey procede per aree campione. Ogni area viene coperta integralmente, campo per campo, prima di passare alla successiva. Questa pagina riporta lo stato di copertura calcolato direttamente dalla geometria rilevata sul campo.</p>
+<div class="cell" data-hash="progress_cache/html/unnamed-chunk-2_315447808bab9483967e52102775bb25">
 <div class="cell-output-display">
-<div class="bslib-grid bslib-mb-spacing html-fill-item" data-require-bs-caller="layout_column_wrap()" data-require-bs-version="5" style="grid-template-columns:repeat(auto-fit, minmax(min(250px, 100%), 1fr));grid-auto-rows:1fr;--bslib-grid-height:auto;--bslib-grid-height-mobile:auto;">
-<div class="bslib-grid-item bslib-gap-spacing html-fill-container">
-<div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container bslib-value-box" data-bslib-card-init="" data-require-bs-caller="card() value_box()" data-require-bs-version="5 5" style="color:#ffffff;background-color:#94AE89;--bslib-color-fg:#ffffff;--bslib-color-bg:#94AE89;">
-<div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
-<div class="value-box-area html-fill-item html-fill-container">
-<p class="value-box-title">Campi schedati</p>
-<p class="value-box-value">485</p>
+<div class="sheet coverage">
+<div class="sheet-header">
+<span class="sheet-id">Area campione 2</span>
+<span class="sheet-title">Target annuale</span>
+<span class="sheet-meta">2 poligoni</span>
+</div>
+<p class="coverage-note">L'area in corso di ricognizione. La copertura è calcolata sull'intersezione fra i campi schedati e il perimetro dell'area campione.</p>
+<div class="coverage-bar" role="img" aria-label="Area campione 2: 27.5 per cento ricognito, 44.9 per cento da verificare">
+<div class="coverage-fill" style="width:27.46%"></div>
+<div class="coverage-unknown" style="left:27.46%; width:44.91%"></div>
+<div class="coverage-ticks">
+<span class="coverage-tick" style="left:0%"></span>
+<span class="coverage-tick" style="left:25%"></span>
+<span class="coverage-tick" style="left:50%"></span>
+<span class="coverage-tick" style="left:75%"></span>
+<span class="coverage-tick" style="left:100%"></span>
+</div>
+</div>
+<div class="coverage-key">
 <span>
-Area totale: 
-1179.93
-ha
+<span class="key-swatch key-done"></span>
+ricognito
+</span>
+<span>
+<span class="key-swatch key-unknown"></span>
+da verificare
+</span>
+<span>
+<span class="key-swatch key-todo"></span>
+non ricognito
 </span>
 </div>
+<div class="sheet-figures">
+<dl>
+<div>
+<dt>Ricognito</dt>
+<dd>
+152,7 ha
+<span class="unit">di 556,0 ha</span>
+</dd>
 </div>
-<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
+<div>
+<dt>Copertura</dt>
+<dd>27,5%</dd>
+</div>
+<div>
+<dt>Da verificare</dt>
+<dd>
+249,7 ha
+<span class="unit">39 campi senza esito</span>
+</dd>
+</div>
+<div>
+<dt>Campi ricogniti</dt>
+<dd>45</dd>
+</div>
+<div>
+<dt>Unità topografiche</dt>
+<dd>8</dd>
+</div>
+</dl>
 </div>
 </div>
-<div class="bslib-grid-item bslib-gap-spacing html-fill-container">
-<div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container bslib-value-box" data-bslib-card-init="" data-require-bs-caller="card() value_box()" data-require-bs-version="5 5" style="color:#ffffff;background-color:#7C3626;--bslib-color-fg:#ffffff;--bslib-color-bg:#7C3626;">
-<div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
-<div class="value-box-area html-fill-item html-fill-container">
-<p class="value-box-title">UT individuate</p>
-<p class="value-box-value">157</p>
+<div class="sheet coverage">
+<div class="sheet-header">
+<span class="sheet-id">Area campione 1</span>
+<span class="sheet-title">Prima area campione</span>
+<span class="sheet-meta">1 poligono</span>
+</div>
+<div class="coverage-bar" role="img" aria-label="Area campione 1: 68.7 per cento ricognito, 1.4 per cento da verificare">
+<div class="coverage-fill" style="width:68.71%"></div>
+<div class="coverage-unknown" style="left:68.71%; width:1.36%"></div>
+<div class="coverage-ticks">
+<span class="coverage-tick" style="left:0%"></span>
+<span class="coverage-tick" style="left:25%"></span>
+<span class="coverage-tick" style="left:50%"></span>
+<span class="coverage-tick" style="left:75%"></span>
+<span class="coverage-tick" style="left:100%"></span>
+</div>
+</div>
+<div class="coverage-key">
 <span>
-Area totale: 
-122.87
-ha
+<span class="key-swatch key-done"></span>
+ricognito
+</span>
+<span>
+<span class="key-swatch key-unknown"></span>
+da verificare
+</span>
+<span>
+<span class="key-swatch key-todo"></span>
+non ricognito
 </span>
 </div>
+<div class="sheet-figures">
+<dl>
+<div>
+<dt>Ricognito</dt>
+<dd>
+912,5 ha
+<span class="unit">di 1.328,0 ha</span>
+</dd>
 </div>
-<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
+<div>
+<dt>Copertura</dt>
+<dd>68,7%</dd>
+</div>
+<div>
+<dt>Da verificare</dt>
+<dd>
+18,0 ha
+<span class="unit">12 campi senza esito</span>
+</dd>
+</div>
+<div>
+<dt>Campi ricogniti</dt>
+<dd>314</dd>
+</div>
+<div>
+<dt>Unità topografiche</dt>
+<dd>151</dd>
+</div>
+</dl>
 </div>
 </div>
-<div class="bslib-grid-item bslib-gap-spacing html-fill-container">
-<div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container bslib-value-box" data-bslib-card-init="" data-require-bs-caller="card() value_box()" data-require-bs-version="5 5" style="color:#7C3626;background-color:#ffebb6;--bslib-color-fg:#7C3626;--bslib-color-bg:#ffebb6;">
-<div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
-<div class="value-box-area html-fill-item html-fill-container">
-<p class="value-box-title">Target (%)</p>
-<div class="value-box-value html-fill-item html-fill-container">87</div>
-<p>Area dei campi indagati sul totale dell'area campione n. 1.</p>
 </div>
 </div>
-<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
+<section id="complessivo" class="level2">
+<h2 class="anchored" data-anchor-id="complessivo">Complessivo</h2>
+<div class="cell" data-hash="progress_cache/html/unnamed-chunk-3_a5b5128154ca87b6a6c44add75dc67d8">
+<div class="cell-output-display">
+<div class="sheet">
+<div class="sheet-header">
+<span class="sheet-id">Totale</span>
+<span class="sheet-title">Tutte le aree campione</span>
+</div>
+<div class="sheet-figures">
+<dl>
+<div>
+<dt>Campi ricogniti</dt>
+<dd>
+359
+<span class="unit">di 580 schedati</span>
+</dd>
+</div>
+<div>
+<dt>Area ricognita</dt>
+<dd>1.081,0 ha</dd>
+</div>
+<div>
+<dt>Senza esito</dt>
+<dd>
+51
+<span class="unit">campi da verificare</span>
+</dd>
+</div>
+<div>
+<dt>UT individuate</dt>
+<dd>160</dd>
+</div>
+<div>
+<dt>Aree campione</dt>
+<dd>2 di 9</dd>
+</div>
+</dl>
 </div>
 </div>
 </div>
 </div>
+<div class="provenance">
+<div class="cell" data-hash="progress_cache/html/unnamed-chunk-4_d8c9a35630b2378704b501c38b9cbc10">
+<p>Dati di campagna aggiornati al 18 settembre 2026. Copertura calcolata dalla geometria in EPSG:32633.</p>
 </div>
-<section id="generale" class="level2">
-<h2 class="anchored" data-anchor-id="generale">Generale</h2>
-<p>In questa pagina sono raccolte le attività da completare per l’avanzamento del progetto. Successivamente alla creazione del sito, la pagina diventerà una dashboard di controllo dell’avanzamento generale delle attività di survey.</p>
-<table class="table">
-<caption>Tabella riepilogativa dei task da completare in generale post-survey.</caption>
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Stato</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="c-pill c-pill--success">Completato</span></td>
-<td>Importazione delle informazioni dei campi dal 21 al 38 e 41,44,48 su Google Sheets. Disegnare il poligono del campo 28.</td>
-</tr>
-<tr class="even">
-<td><span class="c-pill c-pill--success">Completato</span></td>
-<td>Importazione delle UT sul GIS. Mancano delle UT disegnate a mano sulle stampe delle mappe. In particolare: 31 (area di frammenti nel campo 29), 33 (blocchi di reimpiego. In che campo? 4?), 34 (area di frammenti nel campo 36), 36 (area di frammenti nel campo 48).</td>
-</tr>
-<tr class="odd">
-<td><span class="c-pill c-pill--danger">Non completato</span></td>
-<td>…</td>
-</tr>
-<tr class="even">
-<td><span class="c-pill c-pill--danger">Non completato</span></td>
-<td>Script che esporta la scheda di ogni UT</td>
-</tr>
-<tr class="odd">
-<td><span class="c-pill c-pill--danger">Non completato</span></td>
-<td>Completare i campi non tracciati</td>
-</tr>
-<tr class="even">
-<td><span class="c-pill c-pill--danger">Non completato</span></td>
-<td>Aggiungere punto del muro di cinta romano?</td>
-</tr>
-<tr class="odd">
-<td><span class="c-pill c-pill--danger">Non completato</span></td>
-<td>Creare tabelle con statistiche descrittive generali delle UT e dei campi (quanti uliveti, quanti campi non accessibili, ecc.)</td>
-</tr>
-<tr class="even">
-<td><span class="c-pill c-pill--danger">Non completato</span></td>
-<td>Aggiustare date survey su Google Sheets e reimportare i file.</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Aggiungere area media coperta giornalmente</td>
-</tr>
-</tbody>
-</table>
+</div>
 </section>
-<section id="pagina-avanzamento-del-progetto" class="level2">
-<h2 class="anchored" data-anchor-id="pagina-avanzamento-del-progetto">Pagina ‘Avanzamento del progetto’</h2>
+<section id="da-completare" class="level2">
+<h2 class="anchored" data-anchor-id="da-completare">Da completare</h2>
+<p>Attività ancora aperte, distinte per ambito.</p>
 <table class="table">
-<caption>Tabella riepilogativa dei task da completare nella pagina <code>progress.qmd</code></caption>
+<caption>Attività aperte al 18 settembre 2026.</caption>
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 22%">
+<col style="width: 78%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Stato</th>
-<th>Descrizione</th>
+<th>Ambito</th>
+<th>Attività</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="c-pill c-pill--danger">Non completato</span></td>
-<td>Dashboard interattiva per la consultazione in forma tabulare (e lo scaricamento) dei dati sui campi e sulle UT.</td>
+<td>Dati di campo</td>
+<td>Completare il tracciamento dei campi non ancora disegnati</td>
 </tr>
 <tr class="even">
-<td><span class="c-pill c-pill--success">Completato</span></td>
-<td>Aggiungere una progress bar riepilogativa in cima alla dashboard o a questa pagina.</td>
+<td>Dati di campo</td>
+<td>Importare le UT disegnate a mano sulle stampe: 31 (campo 29), 33 (blocchi di reimpiego), 34 (campo 36), 36 (campo 48)</td>
 </tr>
 <tr class="odd">
-<td><span class="c-pill c-pill--success">Completato</span></td>
-<td>Aggiungere una progress bar con l’area dei campi attualmente attraversati e schedati.</td>
+<td>Dati di campo</td>
+<td>Verificare e uniformare le date di ricognizione</td>
 </tr>
 <tr class="even">
-<td><span class="c-pill c-pill--success">Completato</span></td>
-<td>Aggiungere una progress bar con quanto manca a raggiungere il target prefissato per l’intero progetto.</td>
+<td>Analisi</td>
+<td>Aggiornare il modello cronologico con i dati successivi a marzo 2025</td>
 </tr>
 <tr class="odd">
-<td><span class="c-pill c-pill--success">Completato</span></td>
-<td>Aggiungere una progress bar con il numero di UT schedate.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="pagina-villa-mascherone" class="level2">
-<h2 class="anchored" data-anchor-id="pagina-villa-mascherone">Pagina ‘Villa Mascherone’</h2>
-<table class="table">
-<caption>Tabella riepilogativa dei task da completare nella pagina <code>mascherone.qmd</code></caption>
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Stato</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="c-pill c-pill--success">Completato</span></td>
-<td>Renderizzazione della pianta della villa e del campo in bianco e nero semplice;</td>
+<td>Analisi</td>
+<td>Statistiche descrittive di campi e UT (uso del suolo, accessibilità, visibilità)</td>
 </tr>
 <tr class="even">
-<td><span class="c-pill c-pill--success">Completato</span></td>
-<td>Visualizzazione spaziale della concentrazione di laterizi;</td>
+<td>Analisi</td>
+<td>Area media coperta giornalmente</td>
 </tr>
 <tr class="odd">
-<td><span class="c-pill c-pill--success">Completato</span></td>
-<td>Visualizzazione spaziale della concentrazione di reperti ceramici;</td>
+<td>Sito</td>
+<td>Mappe distributive per classe di materiale</td>
 </tr>
 <tr class="even">
-<td><span class="c-pill c-pill--success">Completato</span></td>
-<td>Primo tentativo di cronologia con metodi aoristici</td>
+<td>Sito</td>
+<td>Filtro combinato su schede e mappa</td>
 </tr>
 <tr class="odd">
-<td><span class="c-pill c-pill--warning">In avanzamento</span></td>
-<td>Applicazione ICAR su dataset pulito</td>
-</tr>
-<tr class="even">
-<td><span class="c-pill c-pill--success">Completato</span></td>
-<td>Creazione di una funzione per generare mappe di classi di materiali.</td>
-</tr>
-<tr class="odd">
-<td><span class="c-pill c-pill--danger">Non completato</span></td>
-<td>…</td>
+<td>Sito</td>
+<td>Versione inglese</td>
 </tr>
 </tbody>
 </table>
@@ -656,9 +646,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("https:\/\/robertoragno\.github\.io\/nacs\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left"><img src="images/logos/uniba.png" class="partner-logo img-fluid" alt="Università degli Studi di Bari Aldo Moro"></div>   
+    <div class="nav-footer-center">Northern Apulia Coastal Survey</div>
+    <div class="nav-footer-right"><img src="images/logos/unifg.png" class="partner-logo img-fluid" alt="Università degli Studi di Foggia"></div>
+  </div>
+</footer>
+<script src="js/site.js"></script>
 
 
 

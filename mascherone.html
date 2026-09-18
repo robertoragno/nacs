@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Northern Apulia Coastal Landscape - Villa Mascherone</title>
+<title>Northern Apulia Coastal Survey - Villa Mascherone</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -44,6 +44,10 @@ div.csl-indent {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -54,6 +58,12 @@ div.csl-indent {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
   "language": {
     "search-no-results-text": "Nessun risultato",
     "search-matching-documents-text": "documenti trovati",
@@ -72,7 +82,6 @@ div.csl-indent {
 <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -83,33 +92,60 @@ div.csl-indent {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logo.png" alt="" class="navbar-logo">
+    <img src="./images/logo.PNG" alt="Northern Apulia Coastal Survey" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Northern Apulia Coastal Landscape</span>
+    <span class="navbar-title">Northern Apulia Coastal Survey</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Ricerca"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Attiva/disattiva la navigazione" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
-  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-schede" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Schede</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-il-progetto" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Il progetto</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-schede">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-il-progetto">    
+        <li>
+    <a class="dropdown-item" href="./index.html" rel="" target="">
+ <span class="dropdown-text">Il survey</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./progress.html" rel="" target="">
+ <span class="dropdown-text">Avanzamento</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-il-territorio" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Il territorio</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-il-territorio">    
         <li>
     <a class="dropdown-item" href="./fields.html" rel="" target="">
- <span class="dropdown-text">Schede di campi (UR)</span></a>
+ <span class="dropdown-text">Campi (UR)</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./ut.html" rel="" target="">
- <span class="dropdown-text">Schede di unità topografiche (UT)</span></a>
+ <span class="dropdown-text">Unità topografiche (UT)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-i-siti" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">I siti</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-i-siti">    
+        <li>
+    <a class="dropdown-item" href="./mascherone.html" rel="" target="">
+ <span class="dropdown-text">Villa Mascherone</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./siti.html" rel="" target="">
+ <span class="dropdown-text">I siti</span></a>
   </li>  
     </ul>
   </li>
@@ -123,15 +159,11 @@ div.csl-indent {
  <span class="dropdown-text">Cronologia</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./mascherone.html" rel="" target="">
- <span class="dropdown-text">Villa Mascherone</span></a>
+    <a class="dropdown-item" href="./spatial_analysis_functional.html" rel="" target="">
+ <span class="dropdown-text">Analisi spaziali</span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./progress.html" rel="" target="">
- <span class="menu-text">Avanzamento</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./bibliography.html" rel="" target="">
  <span class="menu-text">Bibliografia</span></a>
@@ -189,15 +221,8 @@ div.csl-indent {
 
 </header>
 
-<div class="cell">
-<style type="text/css">
-p {
-  text-align: justify
-}
-</style>
-</div>
 <p>In questa pagina si possono consultare le analisi preliminari effettuate sui campioni provenienti dalla ricognizione di Settembre-Ottobre 2024 in località Mascherone, Manfredonia (FG). Le indagini di superficie hanno riguardato l’area denominata come UR 62, localizzata a circa 1.4 km dal perimetro dell’antica città di Siponto. Nel campo è stata predisposta una griglia regolare con 122 quadrati di dimensioni 20m x 20m, orientati secondo l’andamento della strada (viale degli Eucalipti) a N e il canneto divisorio lungo l’asse E del campo.</p>
-<div class="cell page-columns page-full" data-layout-align="center">
+<div class="cell page-columns page-full" data-layout-align="center" data-hash="mascherone_cache/html/fig-mascherone-map_1f69b7f021d99fc21703acaafc8eb47e">
 <div class="cell-output-display page-columns page-full">
 <div id="fig-mascherone-map" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
@@ -221,7 +246,7 @@ p {
 <li>La cronologia può essere rifinita maggiormente attraverso un’indagine statistica più raffinata. Le analisi aoristiche sono un ottimo punto di partenza per la definizione delle fasi di vita di insediamenti non scavati, in cui non sono state effettuate analisi al radiocarbonio, e le cui uniche informazioni cronologiche derivano dalle cronotipologie dei reperti <span class="citation" data-cites="ashbyComparisonMethodsTemporal2013 johnsonAoristicAnalysisSeeds2004">(<a href="#ref-ashbyComparisonMethodsTemporal2013" role="doc-biblioref">Ashby e Bowers 2013</a>; <a href="#ref-johnsonAoristicAnalysisSeeds2004" role="doc-biblioref">Johnson 2004</a>)</span>. I singoli frammenti ceramici sono trattati come ‘blocchi temporali’, che vengono poi sommati per ottenere informazioni sull’intensità di occupazione. La logica è simile alle indagini paleodemografiche basate su datazioni C14: “più cose, più persone”. Tuttavia, la risoluzione cronologica offerta dalle cronotipologie è inferiore alle datazioni basate su radiocarbonio in quanto non ci consentono di misurare il grado di incertezza sulla cronologia proposta.</li>
 </ol>
 <p>Il terzo punto è particolarmente interessante e complesso da studiare. Un’alternativa bayesiana ai metodi aoristici è stata recentemente proposta in <span class="citation" data-cites="cremaBayesianAlternativeAoristic2024">Crema (<a href="#ref-cremaBayesianAlternativeAoristic2024" role="doc-biblioref">2024</a>)</span>, utilizzando modelli ICAR per tenere conto dell’autocorrelazione temporale all’interno del dataset. I risultati del modello (<a href="#fig-ICAR-Mascherone-Reduced">Figura&nbsp;4</a>) forniscono una distribuzione temporale complessiva dei materiali diagnostici nel dataset, rappresentata in termini di frequenze relative per ciascun intervallo cronologico. Questi risultati possono essere impiegati per rispondere a domande quali: “quali sono i pattern di continuità o discontinuità temporale nei dati di survey?” o “le fluttuazioni osservate nei dati sono compatibili con un processo graduale o riflettono lacune nella documentazione?”.</p>
-<div id="fig-aoristic-mascherone" class="cell column-screen-inset-shaded quarto-layout-panel" width="10">
+<div id="fig-aoristic-mascherone" class="cell column-screen-inset-shaded quarto-layout-panel" width="10" data-hash="mascherone_cache/html/fig-aoristic-mascherone_dad16f869041c180f4e0fcf395f903a6">
 <figure class="figure">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
@@ -249,7 +274,7 @@ p {
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Aoristic</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">ICAR</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div class="cell">
+<div class="cell" data-hash="mascherone_cache/html/fig-aoristic-Mascherone-Reduced_571760230be7985a94c0ae88eab28a8d">
 <div class="cell-output-display">
 <div id="fig-aoristic-Mascherone-Reduced" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -261,7 +286,7 @@ p {
 </div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<div class="cell">
+<div class="cell" data-hash="mascherone_cache/html/fig-ICAR-Mascherone-Reduced_37cfd2d38282aedc436a0b9f0243b215">
 <div class="cell-output-display">
 <div id="fig-ICAR-Mascherone-Reduced" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -281,7 +306,7 @@ p {
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Ceramica</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Laterizi e tegole</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Macine</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false">Marmo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false">Intonaco</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-6" role="tab" aria-controls="tabset-2-6" aria-selected="false">Tessere musive</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-7" role="tab" aria-controls="tabset-2-7" aria-selected="false">Vetro</a></li></ul>
 <div class="tab-content nav-pills page-columns page-full">
 <div id="tabset-2-1" class="tab-pane active page-columns page-full" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<div class="cell page-columns page-full" data-layout-align="center">
+<div class="cell page-columns page-full" data-layout-align="center" data-hash="mascherone_cache/html/fig-mascherone-ceramica-map_116ce84c6ccbd9b8b6988ab61aea7d59">
 <div class="cell-output-display page-columns page-full">
 <div id="fig-mascherone-ceramica-map" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
@@ -293,7 +318,7 @@ p {
 </div>
 </div>
 <div id="tabset-2-2" class="tab-pane page-columns page-full" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<div class="cell page-columns page-full" data-layout-align="center">
+<div class="cell page-columns page-full" data-layout-align="center" data-hash="mascherone_cache/html/fig-mascherone-laterizi-map_442ef8d111502128afc414ca1dc9ab9e">
 <div class="cell-output-display page-columns page-full">
 <div id="fig-mascherone-laterizi-map" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
@@ -305,7 +330,7 @@ p {
 </div>
 </div>
 <div id="tabset-2-3" class="tab-pane page-columns page-full" role="tabpanel" aria-labelledby="tabset-2-3-tab">
-<div class="cell page-columns page-full" data-layout-align="center">
+<div class="cell page-columns page-full" data-layout-align="center" data-hash="mascherone_cache/html/fig-mascherone-macine-map_3b0412c4a7b3f2b1b9ed6b28d9f5503a">
 <div class="cell-output-display page-columns page-full">
 <div id="fig-mascherone-macine-map" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
@@ -317,7 +342,7 @@ p {
 </div>
 </div>
 <div id="tabset-2-4" class="tab-pane page-columns page-full" role="tabpanel" aria-labelledby="tabset-2-4-tab">
-<div class="cell page-columns page-full" data-layout-align="center">
+<div class="cell page-columns page-full" data-layout-align="center" data-hash="mascherone_cache/html/fig-mascherone-marmo-map_9386ca41f3daa4a02c51c3f47a400a98">
 <div class="cell-output-display page-columns page-full">
 <div id="fig-mascherone-marmo-map" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
@@ -329,7 +354,7 @@ p {
 </div>
 </div>
 <div id="tabset-2-5" class="tab-pane page-columns page-full" role="tabpanel" aria-labelledby="tabset-2-5-tab">
-<div class="cell page-columns page-full" data-layout-align="center">
+<div class="cell page-columns page-full" data-layout-align="center" data-hash="mascherone_cache/html/fig-mascherone-intonaco-map_a9de6864213eb38207bde912c6af979d">
 <div class="cell-output-display page-columns page-full">
 <div id="fig-mascherone-intonaco-map" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
@@ -341,7 +366,7 @@ p {
 </div>
 </div>
 <div id="tabset-2-6" class="tab-pane page-columns page-full" role="tabpanel" aria-labelledby="tabset-2-6-tab">
-<div class="cell page-columns page-full" data-layout-align="center">
+<div class="cell page-columns page-full" data-layout-align="center" data-hash="mascherone_cache/html/fig-mascherone-tessere-map_47051d09176b7db8b4b8699b901252d6">
 <div class="cell-output-display page-columns page-full">
 <div id="fig-mascherone-tessere-map" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
@@ -353,7 +378,7 @@ p {
 </div>
 </div>
 <div id="tabset-2-7" class="tab-pane page-columns page-full" role="tabpanel" aria-labelledby="tabset-2-7-tab">
-<div class="cell page-columns page-full" data-layout-align="center">
+<div class="cell page-columns page-full" data-layout-align="center" data-hash="mascherone_cache/html/fig-mascherone-vetro-map_1c5eb3aa7673af98f244310fa3857119">
 <div class="cell-output-display page-columns page-full">
 <div id="fig-mascherone-vetro-map" class="quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="figure page-columns page-full">
@@ -380,7 +405,7 @@ p {
 <h2 class="anchored" data-anchor-id="informazioni-supplementari">Informazioni supplementari</h2>
 <section id="macroclassi-cronotipologiche" class="level3">
 <h3 class="anchored" data-anchor-id="macroclassi-cronotipologiche">Macroclassi cronotipologiche</h3>
-<div class="cell">
+<div class="cell" data-hash="mascherone_cache/html/tbl-datazione-macrocatgorie_75f107dabef9c1cd8386091bb0ee47a3">
 <div class="cell-output-display">
 <div id="tbl-datazione-macrocatgorie" class="anchored">
 <table class="lightable-minimal table table-sm table-striped small" data-quarto-postprocess="true">
@@ -452,7 +477,7 @@ Cronologia
 <tr class="even">
 <td style="text-align: left;">ceramica_protomaiolica</td>
 <td style="text-align: right;">1200</td>
-<td style="text-align: right;">1399</td>
+<td style="text-align: right;">1350</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ceramica_dipinta</td>
@@ -462,7 +487,7 @@ Cronologia
 <tr class="even">
 <td style="text-align: left;">ceramica_RMR</td>
 <td style="text-align: right;">1200</td>
-<td style="text-align: right;">1399</td>
+<td style="text-align: right;">1350</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">ceramica_vernice_rossa_interna</td>
@@ -557,7 +582,7 @@ Cronologia
 <tr class="odd">
 <td style="text-align: left;">ceramica_ICW</td>
 <td style="text-align: right;">201</td>
-<td style="text-align: right;">299</td>
+<td style="text-align: right;">325</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ceramica_fuoco_invetriata</td>
@@ -926,9 +951,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("https:\/\/robertoragno\.github\.io\/nacs\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left"><img src="images/logos/uniba.png" class="partner-logo img-fluid" alt="Università degli Studi di Bari Aldo Moro"></div>   
+    <div class="nav-footer-center">Northern Apulia Coastal Survey</div>
+    <div class="nav-footer-right"><img src="images/logos/unifg.png" class="partner-logo img-fluid" alt="Università degli Studi di Foggia"></div>
+  </div>
+</footer>
+<script src="js/site.js"></script>
 
 
 
