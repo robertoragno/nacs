@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Northern Apulia Coastal Survey - Analisi spaziali</title>
+<title>Analisi spaziali · Northern Apulia Coastal Survey</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -58,6 +58,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Ricerca"
   }
 }</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
 
 
 </head>
@@ -159,37 +160,43 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Analisi spaziali</h1>
+
+
+<h1 class="sr-only">
+Analisi spaziali
+</h1>
+<section id="mappa-spaziale" class="map-full spatial-map column-screen" aria-label="Mappa della densità dei materiali">
+<div id="nacs-spatial-map">
+
 </div>
+<div id="spatial-controls" aria-label="Selettore di classe e unità">
 
+</div>
+<div id="spatial-panel" aria-label="Totali per UT" aria-live="polite">
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-</header>
-
+</div>
+</section>
 <div class="sheet">
 <div class="sheet-header">
-<p><span class="sheet-title">Pagina in costruzione</span></p>
+<p><span class="sheet-title">Come leggere la mappa</span></p>
 </div>
-<p>Questa pagina ospiterà una mappa interattiva della distribuzione funzionale del materiale archeologico: si potrà scegliere una o più classi ceramiche (o altro materiale quantificato) e vedere una heatmap della sua densità sul territorio, con un pannello laterale che ne riepiloga i totali per UT: un’interfaccia da cruscotto, non un grafico statico.</p>
-<p>I conteggi per classe sono già registrati per ogni UT in <code>UT.gpkg</code> (oltre 40 classi, dai laterizi alle anfore alle terre sigillate); manca solo l’interfaccia e il modello di interpolazione spaziale.</p>
+<div id="note-metodologiche" class="callout callout-style-simple callout-none no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Solo visualizzazione esplorativa, non un modello statistico.</strong> L’IDW stima un valore continuo interpolando quelli delle UT più vicine, per mostrare dove la densità di un materiale è relativamente più alta o più bassa: non tiene conto dell’autocorrelazione spaziale, e non assume né verifica che l’andamento tra due UT sia effettivamente lineare. Uso del suolo, visibilità e storia del singolo campo possono cambiare bruscamente da un poligono all’altro; il colore tra le UT campionate va letto come un’indicazione visiva di tendenza, non come una misura stimata in quel punto. Il colore sfuma verso il trasparente in assenza di UT campionate nelle vicinanze, invece di proseguire il calcolo dove non c’è alcuna evidenza a sostenerlo.</p>
+</div>
+</div>
+</div>
 <p><strong>In programma:</strong></p>
 <ul>
-<li>Selettore di classe (o classi) ceramica, con densità ricalcolata sul campo scelto (kg/ha o conteggio/ha)</li>
-<li>Heatmap sulla mappa del survey, interpolata tra le UT campionate</li>
-<li>Pannello con i totali per UT, collegato alla selezione sulla mappa</li>
-<li>Indicazione dell’incertezza dove la ricognizione è stata parziale</li>
+<li>Densità pesata (kg/ha) per altri aggregati, se e quando la pesatura sul campo li coprirà a sufficienza: al momento solo “Ceramica (tutte le classi)” ha un campione di UT pesate ampio abbastanza (100 su 133); laterizi e macine restano a conteggio/ha, pesati rispettivamente su 4 e 3 UT soltanto</li>
+<li>Selezione combinata di classi eterogenee (es. anfore + terra sigillata) oltre ai singoli materiali e agli aggregati già disponibili</li>
+<li>Selezione di classi ceramiche per macro-cronologia (usare il file datazioni)</li>
 </ul>
 </div>
 
@@ -452,6 +459,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </footer>
 <script src="js/site.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="data/map/data.js"></script>
+<script src="data/map/site/data.js"></script>
+<script src="data/spatial/data.js"></script>
+<script src="js/nacs-spatial.js"></script>
 
 
 

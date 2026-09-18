@@ -67,7 +67,7 @@
     "href": "bibliography.html",
     "title": "Bibliografia",
     "section": "",
-    "text": "Le pubblicazioni del progetto, e il dossier bibliografico sul quale si appoggia: gli studi su Siponto e sulla costa pugliese settentrionale consultati per l’inquadramento del territorio e per la codifica dei Legacy data."
+    "text": "Le pubblicazioni del progetto, e il dossier bibliografico sul quale si appoggia: gli studi su Siponto e sulla costa pugliese settentrionale consultati per l’inquadramento del territorio e per la codifica dei Legacy data.\nScarica la bibliografia.bib · 97 referenze, per Zotero e altri reference manager"
   },
   {
     "objectID": "bibliography.html#pubblicazioni-del-progetto",
@@ -135,8 +135,8 @@
   {
     "objectID": "spatial_analysis_functional.html",
     "href": "spatial_analysis_functional.html",
-    "title": "Analisi spaziali",
+    "title": "\nAnalisi spaziali\n",
     "section": "",
-    "text": "Pagina in costruzione\n\nQuesta pagina ospiterà una mappa interattiva della distribuzione funzionale del materiale archeologico: si potrà scegliere una o più classi ceramiche (o altro materiale quantificato) e vedere una heatmap della sua densità sul territorio, con un pannello laterale che ne riepiloga i totali per UT: un’interfaccia da cruscotto, non un grafico statico.\nI conteggi per classe sono già registrati per ogni UT in UT.gpkg (oltre 40 classi, dai laterizi alle anfore alle terre sigillate); manca solo l’interfaccia e il modello di interpolazione spaziale.\nIn programma:\n\nSelettore di classe (o classi) ceramica, con densità ricalcolata sul campo scelto (kg/ha o conteggio/ha)\nHeatmap sulla mappa del survey, interpolata tra le UT campionate\nPannello con i totali per UT, collegato alla selezione sulla mappa\nIndicazione dell’incertezza dove la ricognizione è stata parziale\n\n\n\n\n\n Torna in cima"
+    "text": "Analisi spaziali\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCome leggere la mappa\n\n\n\n\n\n\n\nSolo visualizzazione esplorativa, non un modello statistico. L’IDW stima un valore continuo interpolando quelli delle UT più vicine, per mostrare dove la densità di un materiale è relativamente più alta o più bassa: non tiene conto dell’autocorrelazione spaziale, e non assume né verifica che l’andamento tra due UT sia effettivamente lineare. Uso del suolo, visibilità e storia del singolo campo possono cambiare bruscamente da un poligono all’altro; il colore tra le UT campionate va letto come un’indicazione visiva di tendenza, non come una misura stimata in quel punto. Il colore sfuma verso il trasparente in assenza di UT campionate nelle vicinanze, invece di proseguire il calcolo dove non c’è alcuna evidenza a sostenerlo.\n\n\n\nIn programma:\n\nDensità pesata (kg/ha) per altri aggregati, se e quando la pesatura sul campo li coprirà a sufficienza: al momento solo “Ceramica (tutte le classi)” ha un campione di UT pesate ampio abbastanza (100 su 133); laterizi e macine restano a conteggio/ha, pesati rispettivamente su 4 e 3 UT soltanto\nSelezione combinata di classi eterogenee (es. anfore + terra sigillata) oltre ai singoli materiali e agli aggregati già disponibili\nSelezione di classi ceramiche per macro-cronologia (usare il file datazioni)\n\n\n\n\n\n Torna in cima"
   }
 ]
