@@ -89,7 +89,11 @@
   map.addControl(new maplibregl.AttributionControl({ compact: true }), "bottom-right");
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
   map.addControl(new maplibregl.ScaleControl({ maxWidth: 110, unit: "metric" }), "bottom-left");
-  map.addControl(new maplibregl.FullscreenControl(), "top-right");
+  // iOS Safari never implemented the Fullscreen API for arbitrary elements
+  // (only <video>), so this button did nothing there and, worse, left the
+  // map mid-transition with the layer controls visually gone. Only offer it
+  // where the browser actually supports it.
+  if (document.fullscreenEnabled) map.addControl(new maplibregl.FullscreenControl(), "top-right");
 
   var LAYERS = [
     { id: "aree_campione", label: "Aree campione", on: true },
