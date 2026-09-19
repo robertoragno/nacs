@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logo.png" alt="Northern Apulia Coastal Survey" class="navbar-logo">
+    <img src="./images/logo.webp" alt="Northern Apulia Coastal Survey" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Northern Apulia Coastal Survey</span>
@@ -103,6 +103,10 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Il territorio</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-il-territorio">    
+        <li>
+    <a class="dropdown-item" href="./paesaggio.html" rel="" target="">
+ <span class="dropdown-text">Il paesaggio</span></a>
+  </li>  
         <li>
     <a class="dropdown-item" href="./fields.html" rel="" target="">
  <span class="dropdown-text">Campi (UR)</span></a>
@@ -139,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="./spatial_analysis_functional.html" rel="" target="">
- <span class="dropdown-text">Analisi spaziali</span></a>
+ <span class="dropdown-text">Densità dei materiali</span></a>
   </li>  
     </ul>
   </li>
@@ -181,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="sheet">
 <div class="sheet-header">
-<p><span class="sheet-title">Come si legge un sito</span></p>
+  <h2 class="sheet-title anchored" id="come-si-legge-un-sito">Come si legge un sito</h2>
 </div>
 <p>Uno scatter di tegole in un campo arato non è ancora un sito: diventa un <strong>insediamento sparso di tipo 1</strong>, o una <strong>frequentazione</strong>, o una <strong>cava</strong>, dopo la classificazione secondo tre criteri:</p>
 <ul>
@@ -206,7 +210,7 @@ Passa il mouse su un cerchio, o selezionalo, per un’anteprima. Un clic apre la
 </div>
 <div class="sheet">
 <div class="sheet-header">
-<p><span class="sheet-title">Guida alla lettura</span></p>
+  <h2 class="sheet-title anchored" id="guida-alla-lettura">Guida alla lettura</h2>
 </div>
 <div class="callout callout-style-simple callout-none no-icon">
 <div class="callout-body d-flex">
@@ -230,7 +234,8 @@ Passa il mouse su un cerchio, o selezionalo, per un’anteprima. Un clic apre la
 </div>
 <div class="sheet">
 <div class="sheet-header">
-<p><span class="sheet-title">Le classi</span> <span class="sheet-meta">9 famiglie · 17 tipi</span></p>
+  <h2 class="sheet-title anchored" id="le-classi">Le classi</h2>
+  <span class="sheet-meta">9 famiglie · 17 tipi</span>
 </div>
 <div id="taxonomy-list" class="taxonomy">
 
@@ -238,7 +243,8 @@ Passa il mouse su un cerchio, o selezionalo, per un’anteprima. Un clic apre la
 </div>
 <div class="sheet">
 <div class="sheet-header">
-<p><span class="sheet-title">La mappa</span> <span class="sheet-meta">317 siti · Legacy e NACS</span></p>
+  <h2 class="sheet-title anchored" id="la-mappa">La mappa</h2>
+  <span class="sheet-meta">317 siti · Legacy e NACS</span>
 </div>
 <p>Ogni classe della tabella qui sopra corrisponde a un simbolo sulla mappa: stessa forma, stesso colore.</p>
 </div>
@@ -246,13 +252,13 @@ Passa il mouse su un cerchio, o selezionalo, per un’anteprima. Un clic apre la
 <div id="nacs-sites-map-canvas">
 
 </div>
-<div id="sites-base-toggle" class="map-controls" aria-label="Sfondo della mappa">
+<div id="sites-base-toggle" class="map-controls" role="group" aria-label="Sfondo della mappa">
 
 </div>
-<div id="sites-panel" class="sites-panel" aria-label="Filtri e legenda della mappa dei siti">
+<div id="sites-panel" class="sites-panel" role="group" aria-label="Filtri e legenda della mappa dei siti">
 
 </div>
-<div id="sites-timeline" class="sites-timeline" aria-label="Cronologia della mappa dei siti">
+<div id="sites-timeline" class="sites-timeline" role="group" aria-label="Cronologia della mappa dei siti">
 
 </div>
 </section>
@@ -510,9 +516,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left"><img src="images/logos/uniba.png" class="partner-logo img-fluid" alt="Università degli Studi di Bari Aldo Moro"></div>   
+    <div class="nav-footer-left"><img src="images/logos/uniba.webp" class="partner-logo img-fluid" alt="Università degli Studi di Bari Aldo Moro"></div>   
     <div class="nav-footer-center">Northern Apulia Coastal Survey</div>
-    <div class="nav-footer-right"><img src="images/logos/unifg.png" class="partner-logo img-fluid" alt="Università degli Studi di Foggia"></div>
+    <div class="nav-footer-right"><img src="images/logos/unifg.webp" class="partner-logo img-fluid" alt="Università degli Studi di Foggia"></div>
   </div>
 </footer>
 <script src="js/site.js"></script>

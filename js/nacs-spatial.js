@@ -26,7 +26,7 @@
       p.className = "map-error";
       host.insertBefore(p, host.firstChild);
     }
-    p.textContent = "Analisi spaziale: " + msg;
+    p.textContent = "Densità dei materiali: " + msg;
   }
 
   if (!DATA || !DATA.lon || !DATA.lon.length) {
