@@ -4,7 +4,7 @@
     "href": "ut.html",
     "title": "Schede di unità topografiche (UT)",
     "section": "",
-    "text": "Ogni unità topografica (UT) ha una scheda con l’assemblaggio di superficie raccolto, le misurazioni e la sua posizione. Ordina per colonna, o filtra per UT, campo e tipo di evidenza; apri una riga per la scheda completa.\n\n\n\n\n\n\n\n\n\n\n\n169 UT schedate. Dati di campagna aggiornati al 29 settembre 2026.\n\n\n\n\n\n Torna in cima"
+    "text": "Ogni unità topografica (UT) ha una scheda con l’assemblaggio di superficie raccolto, le misurazioni e la sua posizione. Ordina per colonna, o filtra per UT, campo e tipo di evidenza; apri una riga per la scheda completa.\n\n\n\n\n\n\n\n\n\n\n\n170 UT schedate. Dati di campagna aggiornati al 29 settembre 2026.\n\n\n\n\n\n Torna in cima"
   },
   {
     "objectID": "siti.html",
@@ -74,7 +74,7 @@
     "href": "fields.html",
     "title": "Schede di campi (UR)",
     "section": "",
-    "text": "Ogni campo, o unità di ricognizione (UR), ha una scheda con lo stato della ricognizione, le condizioni del terreno e la sua posizione. Ordina per colonna, o filtra per UR; apri una riga per la scheda completa.\n\n\n\n\n\n\n\n\n\n\n\n586 campi schedati, 373 ricogniti. Dati di campagna aggiornati al 29 settembre 2026.\n\n\n\n\n\n Torna in cima"
+    "text": "Ogni campo, o unità di ricognizione (UR), ha una scheda con lo stato della ricognizione, le condizioni del terreno e la sua posizione. Ordina per colonna, o filtra per UR; apri una riga per la scheda completa.\n\n\n\n\n\n\n\n\n\n\n\n586 campi schedati, 374 ricogniti. Dati di campagna aggiornati al 29 settembre 2026.\n\n\n\n\n\n Torna in cima"
   },
   {
     "objectID": "mascherone.html",
@@ -123,14 +123,14 @@
     "href": "progress.html",
     "title": "Avanzamento",
     "section": "",
-    "text": "Il survey procede per aree campione. Ogni area viene coperta integralmente, campo per campo, prima di passare alla successiva. Questa pagina riporta lo stato di copertura calcolato direttamente dalla geometria rilevata sul campo.\nArea campione 2\nTarget annuale\n2 poligoni\n\nL'area in corso di ricognizione. La copertura è calcolata sull'intersezione fra i campi schedati e il perimetro dell'area campione.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nricognito\n\n\n\nda verificare\n\n\n\nnon ricognito\n\n\n\n\n\nRicognito\n\n230,1 ha\ndi 556,0 ha\n\n\n\nCopertura\n41,4%\n\n\nDa verificare\n\n205,4 ha\n30 campi senza esito\n\n\n\nCampi ricogniti\n59\n\n\nUnità topografiche\n17\n\n\n\n\n\n\nArea campione 1\nPrima area campione\n1 poligono\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nricognito\n\n\n\nda verificare\n\n\n\nnon ricognito\n\n\n\n\n\nRicognito\n\n912,5 ha\ndi 1.328,0 ha\n\n\n\nCopertura\n68,7%\n\n\nDa verificare\n\n18,0 ha\n12 campi senza esito\n\n\n\nCampi ricogniti\n314\n\n\nUnità topografiche\n151"
+    "text": "Il survey procede per aree campione. Ogni area viene coperta integralmente, campo per campo, prima di passare alla successiva. Questa pagina riporta lo stato di copertura calcolato direttamente dalla geometria rilevata sul campo.\nArea campione 2\nTarget annuale\n2 poligoni\n\nL'area in corso di ricognizione. La copertura è calcolata sull'intersezione fra i campi schedati e il perimetro dell'area campione.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nricognito\n\n\n\nda verificare\n\n\n\nnon ricognito\n\n\n\n\n\nRicognito\n\n235,2 ha\ndi 556,0 ha\n\n\n\nCopertura\n42,3%\n\n\nDa verificare\n\n200,4 ha\n29 campi senza esito\n\n\n\nCampi ricogniti\n60\n\n\nUnità topografiche\n18\n\n\n\n\n\n\nArea campione 1\nPrima area campione\n1 poligono\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nricognito\n\n\n\nda verificare\n\n\n\nnon ricognito\n\n\n\n\n\nRicognito\n\n912,5 ha\ndi 1.328,0 ha\n\n\n\nCopertura\n68,7%\n\n\nDa verificare\n\n18,0 ha\n12 campi senza esito\n\n\n\nCampi ricogniti\n314\n\n\nUnità topografiche\n151"
   },
   {
     "objectID": "progress.html#complessivo",
     "href": "progress.html#complessivo",
     "title": "Avanzamento",
     "section": "Complessivo",
-    "text": "Complessivo\n\n\n\n\nTotale\nTutte le aree campione\n\n\n\n\nCampi ricogniti\n\n373\ndi 586 schedati\n\n\n\nArea ricognita\n1.158,5 ha\n\n\nSenza esito\n\n42\ncampi da verificare\n\n\n\nUT individuate\n169\n\n\nAree campione\n2 di 9\n\n\n\n\n\n\n\n\nDati di campagna aggiornati al 29 settembre 2026. Copertura calcolata dalla geometria in EPSG:32633."
+    "text": "Complessivo\n\n\n\n\nTotale\nTutte le aree campione\n\n\n\n\nCampi ricogniti\n\n374\ndi 586 schedati\n\n\n\nArea ricognita\n1.163,6 ha\n\n\nSenza esito\n\n41\ncampi da verificare\n\n\n\nUT individuate\n170\n\n\nAree campione\n2 di 9\n\n\n\n\n\n\n\n\nDati di campagna aggiornati al 29 settembre 2026. Copertura calcolata dalla geometria in EPSG:32633."
   },
   {
     "objectID": "progress.html#da-completare",
