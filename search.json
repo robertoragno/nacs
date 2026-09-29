@@ -123,21 +123,21 @@
     "href": "progress.html",
     "title": "Avanzamento",
     "section": "",
-    "text": "Il survey procede per aree campione. Ogni area viene coperta integralmente, campo per campo, prima di passare alla successiva. Questa pagina riporta lo stato di copertura calcolato direttamente dalla geometria rilevata sul campo.\nArea campione 2\nTarget annuale\n2 poligoni\n\nL'area in corso di ricognizione. La copertura è calcolata sull'intersezione fra i campi schedati e il perimetro dell'area campione.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nricognito\n\n\n\nda verificare\n\n\n\nnon ricognito\n\n\n\n\n\nRicognito\n\n152,7 ha\ndi 556,0 ha\n\n\n\nCopertura\n27,5%\n\n\nDa verificare\n\n249,7 ha\n39 campi senza esito\n\n\n\nCampi ricogniti\n45\n\n\nUnità topografiche\n8\n\n\n\n\n\n\nArea campione 1\nPrima area campione\n1 poligono\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nricognito\n\n\n\nda verificare\n\n\n\nnon ricognito\n\n\n\n\n\nRicognito\n\n912,5 ha\ndi 1.328,0 ha\n\n\n\nCopertura\n68,7%\n\n\nDa verificare\n\n18,0 ha\n12 campi senza esito\n\n\n\nCampi ricogniti\n314\n\n\nUnità topografiche\n151"
+    "text": "Il survey procede per aree campione. Ogni area viene coperta integralmente, campo per campo, prima di passare alla successiva. Questa pagina riporta lo stato di copertura calcolato direttamente dalla geometria rilevata sul campo.\nArea campione 2\nTarget annuale\n2 poligoni\n\nL'area in corso di ricognizione. La copertura è calcolata sull'intersezione fra i campi schedati e il perimetro dell'area campione.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nricognito\n\n\n\nda verificare\n\n\n\nnon ricognito\n\n\n\n\n\nRicognito\n\n230,1 ha\ndi 556,0 ha\n\n\n\nCopertura\n41,4%\n\n\nDa verificare\n\n205,4 ha\n30 campi senza esito\n\n\n\nCampi ricogniti\n59\n\n\nUnità topografiche\n17\n\n\n\n\n\n\nArea campione 1\nPrima area campione\n1 poligono\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nricognito\n\n\n\nda verificare\n\n\n\nnon ricognito\n\n\n\n\n\nRicognito\n\n912,5 ha\ndi 1.328,0 ha\n\n\n\nCopertura\n68,7%\n\n\nDa verificare\n\n18,0 ha\n12 campi senza esito\n\n\n\nCampi ricogniti\n314\n\n\nUnità topografiche\n151"
   },
   {
     "objectID": "progress.html#complessivo",
     "href": "progress.html#complessivo",
     "title": "Avanzamento",
     "section": "Complessivo",
-    "text": "Complessivo\n\n\n\n\nTotale\nTutte le aree campione\n\n\n\n\nCampi ricogniti\n\n359\ndi 580 schedati\n\n\n\nArea ricognita\n1.081,0 ha\n\n\nSenza esito\n\n51\ncampi da verificare\n\n\n\nUT individuate\n160\n\n\nAree campione\n2 di 9\n\n\n\n\n\n\n\n\nDati di campagna aggiornati al 18 settembre 2026. Copertura calcolata dalla geometria in EPSG:32633."
+    "text": "Complessivo\n\n\n\n\nTotale\nTutte le aree campione\n\n\n\n\nCampi ricogniti\n\n373\ndi 586 schedati\n\n\n\nArea ricognita\n1.158,5 ha\n\n\nSenza esito\n\n42\ncampi da verificare\n\n\n\nUT individuate\n169\n\n\nAree campione\n2 di 9\n\n\n\n\n\n\n\n\nDati di campagna aggiornati al 29 settembre 2026. Copertura calcolata dalla geometria in EPSG:32633."
   },
   {
     "objectID": "progress.html#da-completare",
     "href": "progress.html#da-completare",
     "title": "Avanzamento",
     "section": "Da completare",
-    "text": "Da completare\nAttività ancora aperte, distinte per ambito.\n\nAttività aperte al 18 settembre 2026.\n\n\n\n\n\n\nAmbito\nAttività\n\n\n\n\nAnalisi\nArea media coperta giornalmente\n\n\nSito\nMappe distributive per classe di materiale\n\n\nSito\nFiltro combinato su schede e mappa\n\n\nSito\nVersione inglese"
+    "text": "Da completare\nAttività ancora aperte, distinte per ambito.\n\nAttività aperte al 29 settembre 2026.\n\n\n\n\n\n\nAmbito\nAttività\n\n\n\n\nAnalisi\nArea media coperta giornalmente\n\n\nSito\nMappe distributive per classe di materiale\n\n\nSito\nFiltro combinato su schede e mappa\n\n\nSito\nVersione inglese"
   },
   {
     "objectID": "spatial_analysis_functional.html",
