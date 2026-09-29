@@ -323,9 +323,23 @@
 
     if (window.NACSLaguna) buildLaguna(layerWrap);
 
+    // On a phone the open panel covers most of the map, so it starts folded
+    // behind a "Livelli" button (hidden by CSS on wide screens).
+    var toggle = document.createElement("button");
+    toggle.type = "button";
+    toggle.className = "map-toggle";
+    toggle.textContent = "Livelli";
+    function fold(collapsed) {
+      host.classList.toggle("is-collapsed", collapsed);
+      toggle.setAttribute("aria-expanded", String(!collapsed));
+    }
+    toggle.addEventListener("click", function () { fold(!host.classList.contains("is-collapsed")); });
+
     host.innerHTML = "";
+    host.appendChild(toggle);
     host.appendChild(baseWrap);
     host.appendChild(layerWrap);
+    fold(window.matchMedia("(max-width: 768px)").matches);
   }
 
   // An ordinary layer checkbox, off by default; ticking it reveals the phase
