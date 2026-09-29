@@ -505,10 +505,30 @@
 
       var slider = document.getElementById("sites-period");
       var sliderLabel = document.getElementById("sites-period-label");
+
+      // The lagoon only appears when the chosen period falls inside one of
+      // its reconstructed phases (index into NACSLaguna.PHASES, 1-based).
+      var LAGUNA_PHASE = { "Rame": 1, "Bronzo": 2, "Prima età del Ferro": 2, "Romana": 3, "Medievale": 4 };
+      var laguna = window.NACSLaguna && window.NACSLaguna.attach(map, "sites-pt");
+      var lagunaNote = null;
+      if (laguna) {
+        timeline.insertAdjacentHTML("beforeend",
+          '<span class="sites-timeline-laguna" hidden><span class="sites-timeline-laguna-phase"></span>' +
+          window.NACSLaguna.legendHTML() + "</span>");
+        lagunaNote = timeline.querySelector(".sites-timeline-laguna");
+      }
+
       slider.addEventListener("input", function () {
         periodIndex = Number(slider.value);
         sliderLabel.textContent = periodIndex === 0 ? "Tutti i periodi" : PERIODS[periodIndex - 1];
         applyFilter();
+        if (!laguna) return;
+        var ph = periodIndex === 0 ? 0 : (LAGUNA_PHASE[PERIODS_SHORT[periodIndex - 1]] || 0);
+        var info = window.NACSLaguna.PHASES[ph - 1];
+        lagunaNote.hidden = ph === 0;
+        if (info) lagunaNote.firstChild.textContent =
+          "Laguna: " + info.label + (info.dates ? " (" + info.dates + ")" : "");
+        laguna.show(ph).catch(function (err) { console.error("[nacs-siti]", err); });
       });
     }
 

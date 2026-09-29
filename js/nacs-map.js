@@ -321,9 +321,41 @@
       layerWrap.appendChild(lab);
     });
 
+    if (window.NACSLaguna) buildLaguna(layerWrap);
+
     host.innerHTML = "";
     host.appendChild(baseWrap);
     host.appendChild(layerWrap);
+  }
+
+  // An ordinary layer checkbox, off by default; ticking it reveals the phase
+  // slider (one phase at a time, like the Sites timeline).
+  function buildLaguna(wrap) {
+    var laguna = window.NACSLaguna.attach(map, "aree_campione-line");
+    var P = window.NACSLaguna.PHASES;
+    wrap.insertAdjacentHTML("beforeend",
+      '<label for="lyr-laguna"><input type="checkbox" id="lyr-laguna">Laguna antica</label>' +
+      '<div class="map-laguna" hidden>' +
+        '<span class="map-laguna-label"></span>' +
+        '<input type="range" min="1" max="' + P.length + '" value="1" step="1"' +
+          ' aria-label="Fase della laguna" list="laguna-phase-ticks">' +
+        '<datalist id="laguna-phase-ticks">' +
+          P.map(function (_, i) { return '<option value="' + (i + 1) + '"></option>'; }).join("") +
+        "</datalist>" +
+        '<div class="map-laguna-legend">' + window.NACSLaguna.legendHTML() + "</div>" +
+      "</div>");
+    var cb = wrap.querySelector("#lyr-laguna");
+    var panel = wrap.querySelector(".map-laguna");
+    var slider = panel.querySelector("input");
+    var label = panel.querySelector(".map-laguna-label");
+    function update() {
+      var i = cb.checked ? Number(slider.value) : 0, ph = P[i - 1];
+      panel.hidden = !cb.checked;
+      if (ph) label.textContent = "Fase: " + ph.label + (ph.dates ? " · " + ph.dates : "");
+      laguna.show(i).catch(function (err) { showMapError(err.message); });
+    }
+    cb.addEventListener("change", update);
+    slider.addEventListener("input", update);
   }
 
   // The controls do not depend on the style, so build them at once: waiting for
