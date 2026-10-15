@@ -4,7 +4,7 @@
     "href": "ut.html",
     "title": "Schede di unità topografiche (UT)",
     "section": "",
-    "text": "Ogni unità topografica (UT) ha una scheda con l’assemblaggio di superficie raccolto, le misurazioni e la sua posizione. Ordina per colonna, o filtra per UT, campo e tipo di evidenza; apri una riga per la scheda completa.\n\n\n\n\n\n\n\n\n\n\n\n186 UT schedate. Dati di campagna aggiornati al 14 ottobre 2026.\n\n\n\n\n\n Torna in cima"
+    "text": "Ogni unità topografica (UT) ha una scheda con l’assemblaggio di superficie raccolto, le misurazioni e la sua posizione. Ordina per colonna, o filtra per UT, campo e tipo di evidenza; apri una riga per la scheda completa.\n\n\n\n\n\n\n\n\n\n\n\n187 UT schedate. Dati di campagna aggiornati al 15 ottobre 2026.\n\n\n\n\n\n Torna in cima"
   },
   {
     "objectID": "siti.html",
@@ -74,7 +74,7 @@
     "href": "fields.html",
     "title": "Schede di campi (UR)",
     "section": "",
-    "text": "Ogni campo, o unità di ricognizione (UR), ha una scheda con lo stato della ricognizione, le condizioni del terreno e la sua posizione. Ordina per colonna, o filtra per UR; apri una riga per la scheda completa.\n\n\n\n\n\n\n\n\n\n\n\n631 campi schedati, 431 ricogniti. Dati di campagna aggiornati al 14 ottobre 2026.\n\n\n\n\n\n Torna in cima"
+    "text": "Ogni campo, o unità di ricognizione (UR), ha una scheda con lo stato della ricognizione, le condizioni del terreno e la sua posizione. Ordina per colonna, o filtra per UR; apri una riga per la scheda completa.\n\n\n\n\n\n\n\n\n\n\n\n636 campi schedati, 436 ricogniti. Dati di campagna aggiornati al 15 ottobre 2026.\n\n\n\n\n\n Torna in cima"
   },
   {
     "objectID": "mascherone.html",
@@ -130,14 +130,14 @@
     "href": "progress.html#complessivo",
     "title": "Avanzamento",
     "section": "Complessivo",
-    "text": "Complessivo\n\n\n\n\nTotale\nTutte le aree campione\n\n\n\n\nCampi ricogniti\n\n431\ndi 631 schedati\n\n\n\nArea ricognita\n1.489,6 ha\n\n\nSenza esito\n\n13\ncampi da verificare\n\n\n\nUT individuate\n186\n\n\nAree campione\n2 di 9\n\n\n\n\n\n\n\n\nDati di campagna aggiornati al 14 ottobre 2026. Copertura calcolata dalla geometria in EPSG:32633."
+    "text": "Complessivo\n\n\n\n\nTotale\nTutte le aree campione\n\n\n\n\nCampi ricogniti\n\n436\ndi 636 schedati\n\n\n\nArea ricognita\n1.502,7 ha\n\n\nSenza esito\n\n13\ncampi da verificare\n\n\n\nUT individuate\n187\n\n\nAree campione\n2 di 9\n\n\n\n\n\n\n\n\nDati di campagna aggiornati al 15 ottobre 2026. Copertura calcolata dalla geometria in EPSG:32633."
   },
   {
     "objectID": "progress.html#da-completare",
     "href": "progress.html#da-completare",
     "title": "Avanzamento",
     "section": "Da completare",
-    "text": "Da completare\nAttività ancora aperte, distinte per ambito.\n\nAttività aperte al 14 ottobre 2026.\n\n\n\n\n\n\nAmbito\nAttività\n\n\n\n\nAnalisi\nArea media coperta giornalmente\n\n\nSito\nMappe distributive per classe di materiale\n\n\nSito\nFiltro combinato su schede e mappa\n\n\nSito\nVersione inglese"
+    "text": "Da completare\nAttività ancora aperte, distinte per ambito.\n\nAttività aperte al 15 ottobre 2026.\n\n\n\n\n\n\nAmbito\nAttività\n\n\n\n\nAnalisi\nArea media coperta giornalmente\n\n\nSito\nMappe distributive per classe di materiale\n\n\nSito\nFiltro combinato su schede e mappa\n\n\nSito\nVersione inglese"
   },
   {
     "objectID": "spatial_analysis_functional.html",
